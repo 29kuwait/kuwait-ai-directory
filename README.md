@@ -3,10 +3,9 @@
 # 🇰🇼 دليل الكويت للذكاء الاصطناعي
 
 <img src="https://img.shields.io/badge/Kuwait_AI_Directory-0057B8?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Powered_by_Meta_Llama_4-0057B8?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/مجاني_ومفتوح_المصدر-00A86B?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Open_Source_AI_Tools-00A86B?style=for-the-badge"/>
 
-### بديل عربي مجاني للـ AI المدفوع
+### دليل عربي مفتوح المصدر للمجتمع
 
 </div>
 
@@ -14,10 +13,36 @@
 
 ## البيان
 **الـ 7 الكبار يبيعونك AI بـ 20$**  
-**احنا نعطيك Llama 4 ببلاش + يفهم لهجتك**  
+**احنا نعطيك بدائل مفتوحة المصدر ببلاش + تفهم لهجتك**  
 
 ChatGPT ما يعرف وين السالمية. Gemini ما يفهم "عساك عالقوة".  
-احنا عيال الكويت وبنينا البديل العربي.
+هدفنا: نكسر الاحتكار ونوفر علم للجميع.
+
+---
+
+## 🏆 افضل 15 اداة AI - مجانية 100%
+
+### **نماذج مفتوحة المصدر**
+| الاداة | الوصف | الرابط |
+| --- | --- | --- |
+| **Llama** | نموذج مفتوح المصدر | [github.com/meta-llama](https://github.com/meta-llama/llama) |
+| **DeepSeek** | قوي للبرمجة ومجاني | [deepseek.com](https://deepseek.com) |
+| **Qwen** | يفهم عربي ممتاز للكود | [qwen.ai](https://qwen.ai) |
+| **Ollama** | شغل النماذج على جهازك | [ollama.com](https://ollama.com) |
+
+### **ادوات البحث والكتابة**
+| الاداة | الوصف | الرابط |
+| --- | --- | --- |
+| **Gemini** | من قوقل ويدعم العربي | [gemini.google.com](https://gemini.google.com) |
+| **Perplexity** | بحث ذكي + مصادر موثوقة | [perplexity.ai](https://perplexity.ai) |
+| **ChatGPT** | الشهير من OpenAI | [chat.openai.com](https://chat.openai.com) |
+
+### **ادوات الصور**
+| الاداة | الوصف | الرابط |
+| --- | --- | --- |
+| **Stable Diffusion** | انشاء صور مفتوح المصدر | [stability.ai](https://stability.ai) |
+
+> *هذي اول 15. بنضيف 35 اداة ثانية. عندك اداة؟ افتح Issue*
 
 ---
 
@@ -32,17 +57,16 @@ ChatGPT ما يعرف وين السالمية. Gemini ما يفهم "عساك ع
 
 ---
 
-## جرب Meta AI الحين
+## المصادر والروابط
 
-- **اسأل**: [meta.ai](https://meta.ai)
-- **انشئ صور**: [imagine.meta.com](https://imagine.meta.com)  
-- **الكود**: [Llama 4](https://github.com/meta-llama/llama)
+جميع الادوات المذكورة هي ملك لشركاتها. 
+هذا الدليل فقط للارشاد والمقارنة.
 
 ---
 
 <div align="center">
 
 **صنع في الكويت ❤️ By saleh ali alfadaghi**  
-**مدعوم بـ Meta AI | MIT License**
+**MIT License**
 
 </div>
