@@ -1,34 +1,48 @@
 <div align="center">
-  
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=30&duration=3000&pause=500&color=8A2BE2&center=true&vCenter=true&width=800&lines=🇰🇼+دليل+الكويت+للذكاء+الاصطناعي;Kuwait+AI+Directory;Built+BY+Arabs+FOR+Arabs+with+Meta" />
 
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664e-44d7-b79b-e2643265f4c0.gif" width="700"/>
+# 🇰🇼 دليل الكويت للذكاء الاصطناعي
 
-<p>
-<img src="https://img.shields.io/badge/⚔️-نكسر_الاحتكار_بالعلم-FF0000?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/🧠-Powered%20by%20Meta%20Llama%204-8A2BE2?style=for-the-badge&logo=meta"/>
-<img src="https://img.shields.io/badge/🔓-مجاني_للابد-00FF00?style=for-the-badge"/>
-</p>
+<img src="https://img.shields.io/badge/Kuwait_AI_Directory-0057B8?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Powered_by_Meta_Llama_4-0057B8?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/مجاني_ومفتوح_المصدر-00A86B?style=for-the-badge"/>
 
-<h2>الـ 7 الكبار يبيعونك AI بـ 20$</h2>
-<h3>احنا نعطيك Llama 4 ببلاش + يفهم لهجتك 💜</h3>
+### بديل عربي مجاني للـ AI المدفوع
 
 </div>
 
 ---
 
-## 🌪️ البيان
-**ChatGPT ما يعرف وين السالمية. Gemini ما يفهم "عساك عالقوة".**  
-**احنا عيال الكويت وبنينا البديل العربي.**  
-*هذه مبادرة مفتوحة المصدر لخدمة المجتمع.*
+## البيان
+**الـ 7 الكبار يبيعونك AI بـ 20$**  
+**احنا نعطيك Llama 4 ببلاش + يفهم لهجتك**  
+
+ChatGPT ما يعرف وين السالمية. Gemini ما يفهم "عساك عالقوة".  
+احنا عيال الكويت وبنينا البديل العربي.
 
 ---
 
-## ⚡ جدول الحقيقة - ليش احنا مختلفين
+## جدول المقارنة
 
-|  | دليل الكويت 🇰🇼 | GPT | Gemini | Grok | Kimi | Claude |
-| --- | --- | --- | --- | --- | --- | --- |
-| **يفهم اللهجة الكويتية** | ✅ | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **يعرف اسعار الكويت** | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **مفتوح المصدر MIT** | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **مجاني بلا حدود** | ✅ | 
+| الميزة | دليل الكويت 🇰🇼 | GPT | Gemini |
+| --- | --- | --- | --- |
+| يفهم اللهجة الكويتية | ✅ | ❌ | ❌ |
+| يعرف اسعار الكويت | ✅ | ❌ | ❌ |
+| مفتوح المصدر MIT | ✅ | ❌ | ❌ |
+| مجاني بلا حدود | ✅ | ❌ | ❌ |
+
+---
+
+## جرب Meta AI الحين
+
+- **اسأل**: [meta.ai](https://meta.ai)
+- **انشئ صور**: [imagine.meta.com](https://imagine.meta.com)  
+- **الكود**: [Llama 4](https://github.com/meta-llama/llama)
+
+---
+
+<div align="center">
+
+**صنع في الكويت ❤️ By saleh ali alfadaghi**  
+**مدعوم بـ Meta AI | MIT License**
+
+</div>
