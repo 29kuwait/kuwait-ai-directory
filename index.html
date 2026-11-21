@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل الكويت للذكاء الاصطناعي</title>
+<meta name="description" content="دليل عربي مفتوح المصدر لأدوات الذكاء الاصطناعي، مع بدائل مجانية ومفتوحة المصدر.">
+<style>
+:root{--bg:#0b1220;--card:#131c31;--line:#22304f;--text:#e8eefc;--muted:#9fb0d0;--accent:#64ffda;--free:#3ddc84;--part:#ffc857;--paid:#ff7b7b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.7}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{text-align:center;padding:48px 0 24px}
+h1{color:var(--accent);font-size:clamp(28px,6vw,44px);margin:0 0 8px}
+header p{color:var(--muted);font-size:18px;margin:0 auto;max-width:640px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:24px 0}
+input[type=search]{flex:1 1 260px;max-width:420px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:16px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:8px}
+.chip{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer;font-size:14px;font-family:inherit}
+.chip.on{background:var(--accent);color:#06241d;border-color:var(--accent);font-weight:bold}
+.count{text-align:center;color:var(--muted);margin:12px 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;padding-bottom:40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px;flex:1}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tag{font-size:12px;padding:2px 10px;border-radius:999px;border:1px solid}
+.free{color:var(--free)}.part{color:var(--part)}.paid{color:var(--paid)}
+a.btn{display:inline-block;background:var(--accent);color:#06241d;padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:14px;text-align:center}
+.empty{text-align:center;color:var(--muted);padding:40px}
+footer{border-top:1px solid var(--line);text-align:center;color:var(--muted);padding:24px 16px;font-size:14px}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>🇰🇼 دليل الكويت للذكاء الاصطناعي</h1>
+  <p>دليل عربي مفتوح المصدر لأدوات الذكاء الاصطناعي، مع بدائل مجانية ومفتوحة المصدر.</p>
+</header>
+<div class="tools"><input type="search" id="q" placeholder="ابحث عن أداة..." aria-label="بحث"></div>
+<div class="chips" id="cats"></div>
+<div class="chips" id="prices"></div>
+<div class="count" id="count"></div>
+<div class="grid" id="grid"></div>
+</div>
+<footer>
+  الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الأسعار تتغير، تأكد من الموقع الرسمي.<br>
+  عندك أداة؟ <a href="https://github.com/29kuwait/kuwait-ai-directory/issues">افتح Issue</a> · رخصة MIT · صنع في الكويت ❤️
+</footer>
+<script>
+const T=[
+// [اسم, وصف, رابط, فئة, سعر: free/part/paid]
+["Llama","نماذج Meta المفتوحة، تقدر تشغلها على جهازك","https://www.llama.com","نماذج مفتوحة","free"],
+["DeepSeek","قوي بالبرمجة والمنطق، ونماذجه مفتوحة","https://www.deepseek.com","نماذج مفتوحة","free"],
+["Qwen","نماذج Alibaba، دعمها للعربي جيد","https://qwen.ai","نماذج مفتوحة","free"],
+["Mistral","نماذج أوروبية مفتوحة وسريعة","https://mistral.ai","نماذج مفتوحة","part"],
+["Fanar","نموذج عربي من قطر","https://fanar.qa","نماذج مفتوحة","free"],
+["Hugging Face","أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي","https://huggingface.co","نماذج مفتوحة","free"],
+["Ollama","شغّل النماذج على جهازك بأمر واحد","https://ollama.com","تشغيل محلي","free"],
+["LM Studio","واجهة سهلة لتشغيل النماذج محلياً","https://lmstudio.ai","تشغيل محلي","free"],
+["Open WebUI","واجهة مثل ChatGPT تشتغل مع النماذج المحلية","https://openwebui.com","تشغيل محلي","free"],
+["ChatGPT","مساعد OpenAI الأشهر","https://chatgpt.com","محادثة وبحث","part"],
+["Gemini","مساعد Google ويدعم العربي","https://gemini.google.com","محادثة وبحث","part"],
+["Claude","مساعد Anthropic، قوي بالكتابة والبرمجة","https://claude.ai","محادثة وبحث","part"],
+["Perplexity","بحث ذكي مع مصادر","https://www.perplexity.ai","محادثة وبحث","part"],
+["Microsoft Copilot","مساعد Microsoft المجاني","https://copilot.microsoft.com","محادثة وبحث","free"],
+["Grok","مساعد xAI","https://grok.com","محادثة وبحث","part"],
+["NotebookLM","لخّص مستنداتك واسألها","https://notebooklm.google.com","محادثة وبحث","part"],
+["Stable Diffusion","توليد صور بنماذج مفتوحة","https://stability.ai","صور","free"],
+["FLUX","نماذج توليد صور عالية الجودة","https://blackforestlabs.ai","صور","part"],
+["Midjourney","من أفضل أدوات توليد الصور","https://www.midjourney.com","صور","paid"],
+["Leonardo AI","توليد وتحرير صور","https://leonardo.ai","صور","part"],
+["Ideogram","توليد صور مع نصوص داخلها","https://ideogram.ai","صور","part"],
+["Canva","تصميم مع أدوات ذكاء اصطناعي","https://www.canva.com","صور","part"],
+["GitHub Copilot","مساعد برمجة داخل المحرر","https://github.com/features/copilot","برمجة","part"],
+["Cursor","محرر أكواد بالذكاء الاصطناعي","https://cursor.com","برمجة","part"],
+["Continue","إضافة مفتوحة المصدر لمساعد البرمجة","https://www.continue.dev","برمجة","free"],
+["Claude Code","مساعد برمجة من سطر الأوامر","https://www.anthropic.com/claude-code","برمجة","paid"],
+["Whisper","تحويل الكلام لنص، مفتوح المصدر","https://github.com/openai/whisper","صوت وفيديو","free"],
+["ElevenLabs","تحويل نص لصوت واقعي","https://elevenlabs.io","صوت وفيديو","part"],
+["Runway","توليد وتحرير فيديو","https://runwayml.com","صوت وفيديو","part"],
+["CapCut","مونتاج فيديو بأدوات ذكية","https://www.capcut.com","صوت وفيديو","part"],
+["DeepL","ترجمة دقيقة","https://www.deepl.com","إنتاجية","part"],
+["Gamma","عروض ومستندات بالذكاء الاصطناعي","https://gamma.app","إنتاجية","part"],
+["Notion AI","ملاحظات ومهام مع مساعد ذكي","https://www.notion.com/product/ai","إنتاجية","paid"]
+];
+const P={free:["مجاني","free"],part:["مجاني جزئياً","part"],paid:["مدفوع","paid"]};
+let cat="الكل",price="الكل",q="";
+const cats=["الكل",...new Set(T.map(t=>t[3]))];
+const $=id=>document.getElementById(id);
+function chips(el,list,get,set){
+  el.innerHTML="";
+  list.forEach(n=>{const b=document.createElement("button");b.className="chip"+(get()===n?" on":"");b.textContent=n;
+    b.onclick=()=>{set(n);render()};el.appendChild(b)});
+}
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function render(){
+  chips($("cats"),cats,()=>cat,v=>cat=v);
+  chips($("prices"),["الكل","مجاني","مجاني جزئياً","مدفوع"],()=>price,v=>price=v);
+  const list=T.filter(t=>(cat==="الكل"||t[3]===cat)&&(price==="الكل"||P[t[4]][0]===price)&&(t[0]+t[1]).toLowerCase().includes(q));
+  $("count").textContent=list.length+" أداة";
+  $("grid").innerHTML=list.length?list.map(t=>`<div class="card"><div class="row"><h3>${esc(t[0])}</h3><span class="tag ${P[t[4]][1]}">${P[t[4]][0]}</span></div><p>${esc(t[1])}</p><div class="row"><small style="color:var(--muted)">${esc(t[3])}</small><a class="btn" href="${t[2]}" target="_blank" rel="noopener">افتح</a></div></div>`).join(""):'<div class="empty">ما لقينا أداة بهالاسم. افتح Issue ونضيفها.</div>';
+}
+$("q").oninput=e=>{q=e.target.value.trim().toLowerCase();render()};
+render();
+</script>
+</body>
+</html>
