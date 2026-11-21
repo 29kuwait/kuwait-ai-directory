@@ -3,59 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>دليل الكويت للذكاء الاصطناعي</title>
-<meta name="description" content="موسوعة مجانية مفتوحة المصدر لأدوات الذكاء الاصطناعي بالعربي، لأهل الكويت والوطن العربي.">
+<title>دليل الكويت للذكاء الاصطناعي | Kuwait AI Directory</title>
+<meta name="description" content="موسوعة مجانية مفتوحة المصدر لأدوات الذكاء الاصطناعي بالعربي والإنجليزي. A free open-source directory of AI tools in Arabic and English.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0e17;--bg2:#0f1626;--card:#111a2c;--line:#1f2b44;--text:#eef2fb;--muted:#93a1bd;--gold:#d8b45a;--gold2:#f2d98c;--free:#4fd6a0;--part:#e6b85c;--paid:#ef8a8a}
+:root{--bg:#0a0e17;--bg2:#0f1626;--card:#111a2c;--line:#1f2b44;--text:#eef2fb;--muted:#93a1bd;--gold:#d8b45a;--gold2:#f2d98c;--free:#4fd6a0;--part:#e6b85c;--paid:#ef8a8a;--tipbg:rgba(216,180,90,.07);--tipline:rgba(216,180,90,.18);--tiptext:#d9cfae;--glow:#1a2745;--barbg:rgba(10,14,23,.88);--btntext:#1a1405}
+:root[data-theme=light]{--bg:#f7f4ec;--bg2:#fffdf8;--card:#ffffff;--line:#e5dcc3;--text:#1b2233;--muted:#5d6577;--gold:#a8821f;--gold2:#7d5f10;--free:#0d8a5b;--part:#9a6b00;--paid:#c23b3b;--tipbg:rgba(168,130,31,.08);--tipline:rgba(168,130,31,.25);--tiptext:#5b4a1a;--glow:#efe4c2;--barbg:rgba(247,244,236,.92);--btntext:#fff}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(1200px 500px at 50% -120px,#1a2745 0,transparent 70%),var(--bg);color:var(--text);font-family:Tajawal,Tahoma,"Segoe UI",sans-serif;line-height:1.8}
+body{margin:0;background:radial-gradient(1200px 500px at 50% -120px,var(--glow) 0,transparent 70%),var(--bg);color:var(--text);font-family:Tajawal,Inter,Tahoma,"Segoe UI",sans-serif;line-height:1.8}
+html[lang=en] body{font-family:Inter,Tajawal,"Segoe UI",sans-serif;line-height:1.65}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-header{text-align:center;padding:64px 0 28px}
-.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);padding:4px 16px;border-radius:999px;font-size:13px;letter-spacing:.5px;margin-bottom:18px}
-h1{font-size:clamp(30px,6vw,52px);font-weight:800;margin:0 0 12px;background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
-header p{color:var(--muted);font-size:clamp(16px,2.4vw,19px);margin:0 auto;max-width:620px}
-.flag{width:46px;height:31px;vertical-align:middle;border-radius:5px;margin-inline-start:12px;box-shadow:0 2px 10px rgba(0,0,0,.5)}
-.goals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px 0 10px}
-@media(max-width:760px){.goals{grid-template-columns:1fr}header{padding-top:44px}}
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{color:var(--gold2);font-weight:800;font-size:15px;letter-spacing:.3px}
+.ctrl{display:flex;gap:8px}
+.ctrl button{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:6px 14px;cursor:pointer;font:inherit;font-size:14px}
+.ctrl button:hover{border-color:var(--gold);color:var(--gold2)}
+header{text-align:center;padding:30px 0 28px}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);padding:4px 16px;border-radius:999px;font-size:13px;letter-spacing:.3px;margin-bottom:18px}
+h1{font-size:clamp(28px,6vw,50px);font-weight:800;margin:0 0 12px;background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.3}
+header p{color:var(--muted);font-size:clamp(16px,2.4vw,19px);margin:0 auto;max-width:640px}
+.flag{width:46px;height:31px;vertical-align:middle;border-radius:5px;margin-inline-start:12px;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+.goals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px 0 10px;text-align:start}
+@media(max-width:760px){.goals{grid-template-columns:1fr}header{padding-top:18px}}
+.goal{background:linear-gradient(180deg,var(--bg2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.goal b{display:block;color:var(--gold2);font-size:17px;margin-bottom:4px}
+.goal span{color:var(--muted);font-size:14.5px}
 .sec{margin:44px 0 6px}
 .sec h2{font-size:26px;margin:0 0 4px;color:var(--gold2)}
 .sec p{margin:0 0 16px;color:var(--muted)}
 .picks{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .pick{padding:10px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer;font:inherit;font-size:15px;transition:.15s}
 .pick:hover,.pick.on{border-color:var(--gold);color:var(--gold2)}
-.share{color:var(--muted);font-size:13px;text-decoration:none;border:1px solid var(--line);padding:4px 12px;border-radius:10px}
-.share:hover{color:var(--gold2);border-color:var(--gold)}
-.acts{display:flex;gap:8px;align-items:center}
-.kw{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
-.goal{background:linear-gradient(180deg,var(--bg2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px 20px}
-.goal b{display:block;color:var(--gold2);font-size:17px;margin-bottom:4px}
-.goal span{color:var(--muted);font-size:14.5px}
-.bar{position:sticky;top:0;z-index:5;background:rgba(10,14,23,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 0;margin-top:26px}
+.bar{position:sticky;top:0;z-index:5;background:var(--barbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 0;margin-top:26px}
 input[type=search]{width:100%;padding:13px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:16px;outline:none}
 input[type=search]:focus{border-color:var(--gold)}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .chip{padding:6px 15px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font:inherit;font-size:14px;transition:.15s}
 .chip:hover{color:var(--text);border-color:var(--gold)}
-.chip.on{background:var(--gold);color:#1a1405;border-color:var(--gold);font-weight:700}
+.chip.on{background:var(--gold);color:var(--btntext);border-color:var(--gold);font-weight:700}
 .count{color:var(--muted);margin:22px 0 14px;font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;padding-bottom:50px}
+.grid,.kw{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.grid{padding-bottom:50px}
 .card{background:linear-gradient(180deg,var(--bg2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px;transition:.2s}
-.card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.18)}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .card h3{margin:0;font-size:19px;font-weight:700}
 .card p{margin:0;color:var(--muted);font-size:14.5px}
-.tip{background:rgba(216,180,90,.07);border:1px solid rgba(216,180,90,.18);border-radius:12px;padding:8px 12px;font-size:13.5px;color:#d9cfae;flex:1}
+.tip{background:var(--tipbg);border:1px solid var(--tipline);border-radius:12px;padding:8px 12px;font-size:13.5px;color:var(--tiptext);flex:1}
 .tip b{color:var(--gold2)}
 .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:12px;padding:1px 10px;border-radius:999px;border:1px solid}
 .free{color:var(--free)}.part{color:var(--part)}.paid{color:var(--paid)}
 .ar{color:var(--gold2)}
 .cat{color:var(--muted);font-size:13px}
-a.btn{color:#1a1405;background:linear-gradient(90deg,var(--gold2),var(--gold));padding:6px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px}
+.acts{display:flex;gap:8px;align-items:center}
+.share{color:var(--muted);font-size:13px;text-decoration:none;border:1px solid var(--line);padding:4px 12px;border-radius:10px}
+.share:hover{color:var(--gold2);border-color:var(--gold)}
+a.btn{color:var(--btntext);background:linear-gradient(90deg,var(--gold2),var(--gold));padding:6px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px}
 .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:50px}
 footer{border-top:1px solid var(--line);text-align:center;color:var(--muted);padding:28px 16px;font-size:14px}
 footer a{color:var(--gold2)}
@@ -63,25 +70,29 @@ footer a{color:var(--gold2)}
 </head>
 <body>
 <div class="wrap">
+<div class="top">
+  <span class="logo">Kuwait AI Directory</span>
+  <div class="ctrl"><button id="lang" type="button">English</button><button id="theme" type="button" aria-label="theme">☾</button></div>
+</div>
 <header>
-  <span class="badge">مجاني · مفتوح المصدر · بدون إعلانات</span>
-  <h1>دليل الكويت للذكاء الاصطناعي<svg class="flag" viewBox="0 0 30 20" role="img" aria-label="علم الكويت"><rect width="30" height="6.67" fill="#007a3d"/><rect y="6.67" width="30" height="6.66" fill="#fff"/><rect y="13.33" width="30" height="6.67" fill="#ce1126"/><path d="M0 0L7.5 6.67V13.33L0 20Z" fill="#000"/></svg></h1>
-  <p>موسوعة مجانية لأدوات الذكاء الاصطناعي بالعربي، مصنفة وبسيطة، لأهل الكويت والوطن العربي.</p>
+  <span class="badge" data-i="badge">مجاني · مفتوح المصدر · بدون إعلانات</span>
+  <h1><span data-i="title">دليل الكويت للذكاء الاصطناعي</span><svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Kuwait"><rect width="30" height="6.67" fill="#007a3d"/><rect y="6.67" width="30" height="6.66" fill="#fff"/><rect y="13.33" width="30" height="6.67" fill="#ce1126"/><path d="M0 0L7.5 6.67V13.33L0 20Z" fill="#000"/></svg></h1>
+  <p data-i="sub">موسوعة مجانية لأدوات الذكاء الاصطناعي بالعربي والإنجليزي، مصنفة وبسيطة.</p>
   <div class="goals">
-    <div class="goal"><b>مجاني 100%</b><span>الموقع مفتوح المصدر بدون اشتراك ولا دفع ولا إعلانات.</span></div>
-    <div class="goal"><b>كل الأدوات في مكان واحد</b><span>كتابة وصور وبرمجة وصوت، كلها مصنفة بالعربي.</span></div>
-    <div class="goal"><b>لأهل الكويت والوطن العربي</b><span>نوضح لك أفضل الأدوات المجانية وكيف تبدأ فيها.</span></div>
+    <div class="goal"><b data-i="g1t">مجاني 100%</b><span data-i="g1d">الموقع مفتوح المصدر بدون اشتراك ولا دفع ولا إعلانات.</span></div>
+    <div class="goal"><b data-i="g2t">كل الأدوات في مكان واحد</b><span data-i="g2d">كتابة وصور وبرمجة وصوت، كلها مصنفة.</span></div>
+    <div class="goal"><b data-i="g3t">لأهل الكويت والوطن العربي</b><span data-i="g3d">نوضح لك أفضل الأدوات المجانية وكيف تبدأ فيها.</span></div>
   </div>
 </header>
 </div>
 <div class="wrap sec">
-  <h2>الأفضل لك</h2>
-  <p>وش تبي تسوي؟ اختر ونرشح لك 3 أدوات مجانية.</p>
+  <h2 data-i="pickT">الأفضل لك</h2>
+  <p data-i="pickD">وش تبي تسوي؟ اختر ونرشح لك 3 أدوات مجانية.</p>
   <div class="picks" id="picks"></div>
   <div class="kw" id="recs"></div>
 </div>
-<div class="bar" id="tools"><div class="wrap">
-  <input type="search" id="q" placeholder="ابحث عن أداة..." aria-label="بحث">
+<div class="bar"><div class="wrap">
+  <input type="search" id="q" aria-label="search">
   <div class="chips" id="cats"></div>
   <div class="chips" id="prices"></div>
 </div></div>
@@ -90,104 +101,150 @@ footer a{color:var(--gold2)}
   <div class="grid" id="grid"></div>
 </div>
 <div class="wrap sec" id="kuwait">
-  <h2>في الكويت</h2>
-  <p>جهات ومؤسسات كويتية لها علاقة بالذكاء الاصطناعي والتحول الرقمي. (المعلومات من مصادر عامة، وتأكد من المواقع الرسمية.)</p>
+  <h2 data-i="kwT">في الكويت</h2>
+  <p data-i="kwD">جهات ومؤسسات كويتية لها علاقة بالذكاء الاصطناعي والتحول الرقمي. المعلومات من مصادر عامة، وتأكد من المواقع الرسمية.</p>
   <div class="kw" id="kwlist" style="padding-bottom:50px"></div>
 </div>
 <footer>
-  الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الشروط والأسعار تتغير، تأكد من الموقع الرسمي.<br>
-  عندك أداة؟ <a href="https://github.com/29kuwait/kuwait-ai-directory/issues">افتح Issue</a> · رخصة MIT · صنع في الكويت ❤️
+  <span data-i="foot1">الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الشروط والأسعار تتغير، تأكد من الموقع الرسمي.</span><br>
+  <span data-i="foot2a">عندك أداة؟</span> <a href="https://github.com/29kuwait/kuwait-ai-directory/issues" data-i="foot2b">افتح Issue</a> · MIT · <span data-i="foot3">صنع في الكويت</span> ❤️
 </footer>
 <script>
-// [اسم, وصف, رابط, فئة, سعر, كيف تبدأ, عربي؟]
+const S={
+badge:["مجاني · مفتوح المصدر · بدون إعلانات","Free · Open source · No ads"],
+title:["دليل الكويت للذكاء الاصطناعي","Kuwait AI Directory"],
+sub:["موسوعة مجانية لأدوات الذكاء الاصطناعي بالعربي والإنجليزي، مصنفة وبسيطة.","A free directory of AI tools in Arabic and English, organized and simple."],
+g1t:["مجاني 100%","100% free"],
+g1d:["الموقع مفتوح المصدر بدون اشتراك ولا دفع ولا إعلانات.","Open source. No subscription, no payment, no ads."],
+g2t:["كل الأدوات في مكان واحد","All tools in one place"],
+g2d:["كتابة وصور وبرمجة وصوت، كلها مصنفة.","Writing, images, coding and audio, all organized."],
+g3t:["لأهل الكويت والوطن العربي","For Kuwait and the Arab world"],
+g3d:["نوضح لك أفضل الأدوات المجانية وكيف تبدأ فيها.","We show you the best free tools and how to start."],
+pickT:["الأفضل لك","Best for you"],
+pickD:["وش تبي تسوي؟ اختر ونرشح لك 3 أدوات مجانية.","What do you want to do? Pick one and get 3 free tools."],
+kwT:["في الكويت","In Kuwait"],
+kwD:["جهات ومؤسسات كويتية لها علاقة بالذكاء الاصطناعي والتحول الرقمي. المعلومات من مصادر عامة، وتأكد من المواقع الرسمية.","Kuwaiti bodies related to AI and digital transformation. Information comes from public sources; check the official sites."],
+foot1:["الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الشروط والأسعار تتغير، تأكد من الموقع الرسمي.","All tools belong to their owners; this directory is for guidance only. Terms and prices change, check the official site."],
+foot2a:["عندك أداة؟","Have a tool?"],
+foot2b:["افتح Issue","Open an Issue"],
+foot3:["صنع في الكويت","Made in Kuwait"]
+};
+const U={search:["ابحث عن أداة...","Search for a tool..."],all:["الكل","All"],free:["مجاني","Free"],part:["مجاني جزئياً","Freemium"],paid:["مدفوع","Paid"],start:["كيف تبدأ:","How to start:"],open:["افتح","Open"],site:["الموقع","Website"],wa:["واتساب","WhatsApp"],arab:["عربي","Arabic"],of:["أداة من","tools of"],empty:["ما لقينا أداة بهالاسم. افتح Issue ونضيفها.","No tool found. Open an Issue and we will add it."],kw:["الكويت","Kuwait"],shareTxt:["من دليل الكويت للذكاء الاصطناعي","From Kuwait AI Directory"]};
+const CATS={open:["نماذج مفتوحة","Open models"],local:["تشغيل محلي","Run locally"],chat:["محادثة وبحث","Chat & search"],code:["برمجة","Coding"],image:["صور","Images"],av:["صوت وفيديو","Audio & video"],prod:["إنتاجية","Productivity"]};
+// [name, descAr, descEn, url, cat, price, tipAr, tipEn, arabic]
 const T=[
-["Llama","نماذج Meta المفتوحة.","https://www.llama.com","نماذج مفتوحة","free","حمّله وشغّله على جهازك عبر Ollama."],
-["DeepSeek","قوي بالبرمجة والمنطق، ونماذجه مفتوحة.","https://www.deepseek.com","نماذج مفتوحة","free","افتح الموقع وسجّل بإيميلك وابدأ المحادثة."],
-["Qwen","نماذج Alibaba، دعمها للعربي جيد.","https://qwen.ai","نماذج مفتوحة","free","جرّبه من موقعه مباشرة بدون تثبيت."],
-["Mistral","نماذج أوروبية مفتوحة وسريعة.","https://mistral.ai","نماذج مفتوحة","part","ادخل Le Chat وجرّب الخطة المجانية."],
-["Fanar","نموذج عربي من قطر.","https://fanar.qa","نماذج مفتوحة","free","افتح الموقع واسأله بالعربي مباشرة.",1],
-["Jais","نموذج عربي إنجليزي من الإمارات.","https://inceptionai.ai/jais","نماذج مفتوحة","free","ادخل موقعه وجرّب المحادثة بالعربي.",1],
-["AceGPT","نموذج لغوي عربي مفتوح المصدر.","https://github.com/FreedomIntelligence/AceGPT","نماذج مفتوحة","free","حمّله من GitHub، يناسب المطورين.",1],
-["Hugging Face","أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي.","https://huggingface.co","نماذج مفتوحة","free","ابحث عن نموذج وجرّبه من Spaces بدون تثبيت."],
-["Hugging Face Chat","محادثة مع نماذج مفتوحة بدون تثبيت.","https://huggingface.co/chat","نماذج مفتوحة","free","افتح الرابط واختر النموذج اللي تبيه."],
-["Ollama","شغّل النماذج على جهازك بأمر واحد.","https://ollama.com","تشغيل محلي","free","ثبّته، ثم اكتب ollama run مع اسم النموذج."],
-["LM Studio","واجهة سهلة لتشغيل النماذج محلياً.","https://lmstudio.ai","تشغيل محلي","free","نزّل البرنامج واختر نموذجاً من القائمة."],
-["Jan","تطبيق يشغّل النماذج على جهازك بدون إنترنت.","https://jan.ai","تشغيل محلي","free","نزّله وحمّل نموذجاً وابدأ المحادثة."],
-["GPT4All","شغّل نماذج على جهازك بدون كرت شاشة قوي.","https://gpt4all.io","تشغيل محلي","free","نزّل التطبيق واختر نموذجاً صغيراً."],
-["Open WebUI","واجهة مثل ChatGPT تشتغل مع النماذج المحلية.","https://openwebui.com","تشغيل محلي","free","يُركّب عادةً بـ Docker ويرتبط مع Ollama."],
-["ChatGPT","مساعد OpenAI الأشهر.","https://chatgpt.com","محادثة وبحث","part","سجّل بإيميلك، الخطة المجانية لها حد يومي."],
-["Gemini","مساعد Google ويدعم العربي.","https://gemini.google.com","محادثة وبحث","part","ادخل بحساب قوقل وابدأ."],
-["Google AI Studio","جرّب نماذج Gemini مجاناً.","https://aistudio.google.com","محادثة وبحث","free","ادخل بحساب قوقل وجرّب النماذج في المتصفح."],
-["Meta AI","مساعد Meta.","https://www.meta.ai","محادثة وبحث","free","ادخله من الموقع أو من تطبيقات Meta."],
-["Duck.ai","محادثة مع عدة نماذج بخصوصية أعلى.","https://duck.ai","محادثة وبحث","free","افتح الرابط وابدأ بدون تسجيل."],
-["LMArena","قارن بين نماذج الذكاء الاصطناعي وشوف أيها أفضل.","https://lmarena.ai","محادثة وبحث","free","اكتب سؤالك وقارن بين جوابين من نموذجين."],
-["Google Colab","شغّل كود بايثون ونماذج على سيرفرات قوقل.","https://colab.research.google.com","برمجة","part","ادخل بحساب قوقل وافتح دفتراً جديداً."],
-["Claude","مساعد Anthropic، قوي بالكتابة والبرمجة.","https://claude.ai","محادثة وبحث","part","سجّل بإيميلك وجرّب الخطة المجانية."],
-["Perplexity","بحث ذكي مع مصادر.","https://www.perplexity.ai","محادثة وبحث","part","اكتب سؤالك وشوف المصادر تحت الجواب."],
-["Microsoft Copilot","مساعد Microsoft المجاني.","https://copilot.microsoft.com","محادثة وبحث","free","افتحه من الموقع أو من متصفح Edge."],
-["Grok","مساعد xAI.","https://grok.com","محادثة وبحث","part","ادخل من الموقع أو من منصة X."],
-["NotebookLM","لخّص مستنداتك واسألها.","https://notebooklm.google.com","محادثة وبحث","part","ارفع ملف PDF واسأل عن محتواه."],
-["Stable Diffusion","توليد صور بنماذج مفتوحة.","https://stability.ai","صور","free","شغّله محلياً بواجهة مثل ComfyUI."],
-["ComfyUI","واجهة بصرية لتوليد الصور محلياً.","https://www.comfy.org","صور","free","نزّله واربطه بنموذج صور مفتوح."],
-["FLUX","نماذج توليد صور عالية الجودة.","https://blackforestlabs.ai","صور","part","جرّبه عبر مواقع تستضيفه مثل Hugging Face."],
-["Midjourney","من أفضل أدوات توليد الصور.","https://www.midjourney.com","صور","paid","يحتاج اشتراكاً مدفوعاً."],
-["Leonardo AI","توليد وتحرير صور.","https://leonardo.ai","صور","part","سجّل واستخدم الرصيد المجاني اليومي."],
-["Ideogram","توليد صور مع نصوص داخلها.","https://ideogram.ai","صور","part","سجّل واكتب وصف الصورة."],
-["Canva","تصميم مع أدوات ذكاء اصطناعي.","https://www.canva.com","صور","part","ابدأ بقالب جاهز وجرّب أدوات الذكاء."],
-["GitHub Copilot","مساعد برمجة داخل المحرر.","https://github.com/features/copilot","برمجة","part","ثبّت الإضافة في VS Code وسجّل بحساب GitHub."],
-["Cursor","محرر أكواد بالذكاء الاصطناعي.","https://cursor.com","برمجة","part","نزّله وافتح مشروعك."],
-["Continue","إضافة مفتوحة المصدر لمساعد البرمجة.","https://www.continue.dev","برمجة","free","ثبّت الإضافة واربطها بنموذج محلي."],
-["Claude Code","مساعد برمجة من سطر الأوامر.","https://www.anthropic.com/claude-code","برمجة","paid","يحتاج حساباً مدفوعاً."],
-["Whisper","تحويل الكلام لنص ويدعم العربي.","https://github.com/openai/whisper","صوت وفيديو","free","شغّله محلياً لتفريغ ملفات الصوت.",1],
-["Piper","تحويل نص لصوت محلياً.","https://github.com/rhasspy/piper","صوت وفيديو","free","نزّل صوتاً وشغّله من سطر الأوامر."],
-["ElevenLabs","تحويل نص لصوت واقعي.","https://elevenlabs.io","صوت وفيديو","part","سجّل واستخدم الرصيد المجاني الشهري."],
-["Runway","توليد وتحرير فيديو.","https://runwayml.com","صوت وفيديو","part","سجّل وجرّب الرصيد المجاني."],
-["CapCut","مونتاج فيديو بأدوات ذكية.","https://www.capcut.com","صوت وفيديو","part","نزّل التطبيق وابدأ مشروعاً جديداً."],
-["Tesseract OCR","استخراج النص من الصور ويدعم العربي.","https://github.com/tesseract-ocr/tesseract","إنتاجية","free","ثبّته واختر لغة العربية عند التشغيل.",1],
-["DeepL","ترجمة دقيقة.","https://www.deepl.com","إنتاجية","part","الصق النص واختر اللغة."],
-["Gamma","عروض ومستندات بالذكاء الاصطناعي.","https://gamma.app","إنتاجية","part","اكتب فكرة العرض ويطلع لك جاهز."],
-["Notion AI","ملاحظات ومهام مع مساعد ذكي.","https://www.notion.com/product/ai","إنتاجية","paid","يحتاج خطة مدفوعة."]
+["Llama","نماذج Meta المفتوحة.","Meta's open models.","https://www.llama.com","open","free","حمّله وشغّله على جهازك عبر Ollama.","Download it and run it on your computer with Ollama."],
+["DeepSeek","قوي بالبرمجة والمنطق، ونماذجه مفتوحة.","Strong at coding and reasoning, with open models.","https://www.deepseek.com","open","free","افتح الموقع وسجّل بإيميلك وابدأ المحادثة.","Open the site, sign up with email and start chatting."],
+["Qwen","نماذج Alibaba، دعمها للعربي جيد.","Alibaba's models, with good Arabic support.","https://qwen.ai","open","free","جرّبه من موقعه مباشرة بدون تثبيت.","Try it on the website, no install needed."],
+["Mistral","نماذج أوروبية مفتوحة وسريعة.","Fast open models from Europe.","https://mistral.ai","open","part","ادخل Le Chat وجرّب الخطة المجانية.","Open Le Chat and try the free plan."],
+["Fanar","نموذج عربي من قطر.","An Arabic model from Qatar.","https://fanar.qa","open","free","افتح الموقع واسأله بالعربي مباشرة.","Open the site and ask in Arabic directly.",1],
+["Jais","نموذج عربي إنجليزي من الإمارات.","An Arabic-English model from the UAE.","https://inceptionai.ai/jais","open","free","ادخل موقعه وجرّب المحادثة بالعربي.","Visit the site and chat in Arabic.",1],
+["AceGPT","نموذج لغوي عربي مفتوح المصدر.","An open-source Arabic language model.","https://github.com/FreedomIntelligence/AceGPT","open","free","حمّله من GitHub، يناسب المطورين.","Download it from GitHub; suited to developers.",1],
+["Hugging Face","أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي.","The largest hub of AI models and projects.","https://huggingface.co","open","free","ابحث عن نموذج وجرّبه من Spaces بدون تثبيت.","Find a model and try it in Spaces, no install.",],
+["Hugging Face Chat","محادثة مع نماذج مفتوحة بدون تثبيت.","Chat with open models, no install.","https://huggingface.co/chat","open","free","افتح الرابط واختر النموذج اللي تبيه.","Open the link and pick the model you want."],
+["Ollama","شغّل النماذج على جهازك بأمر واحد.","Run models on your computer with one command.","https://ollama.com","local","free","ثبّته، ثم اكتب ollama run مع اسم النموذج.","Install it, then type ollama run with a model name."],
+["LM Studio","واجهة سهلة لتشغيل النماذج محلياً.","An easy app to run models locally.","https://lmstudio.ai","local","free","نزّل البرنامج واختر نموذجاً من القائمة.","Download the app and pick a model from the list."],
+["Jan","تطبيق يشغّل النماذج على جهازك بدون إنترنت.","An app that runs models offline on your computer.","https://jan.ai","local","free","نزّله وحمّل نموذجاً وابدأ المحادثة.","Install it, download a model and start chatting."],
+["GPT4All","شغّل نماذج على جهازك بدون كرت شاشة قوي.","Run models without a powerful graphics card.","https://gpt4all.io","local","free","نزّل التطبيق واختر نموذجاً صغيراً.","Install the app and choose a small model."],
+["Open WebUI","واجهة مثل ChatGPT تشتغل مع النماذج المحلية.","A ChatGPT-style interface for local models.","https://openwebui.com","local","free","يُركّب عادةً بـ Docker ويرتبط مع Ollama.","Usually installed with Docker and connected to Ollama."],
+["ChatGPT","مساعد OpenAI الأشهر.","OpenAI's popular assistant.","https://chatgpt.com","chat","part","سجّل بإيميلك، الخطة المجانية لها حد يومي.","Sign up with email; the free plan has a daily limit."],
+["Gemini","مساعد Google ويدعم العربي.","Google's assistant, with Arabic support.","https://gemini.google.com","chat","part","ادخل بحساب قوقل وابدأ.","Sign in with a Google account and start."],
+["Google AI Studio","جرّب نماذج Gemini مجاناً.","Try Gemini models for free.","https://aistudio.google.com","chat","free","ادخل بحساب قوقل وجرّب النماذج في المتصفح.","Sign in with Google and try models in the browser."],
+["Meta AI","مساعد Meta.","Meta's assistant.","https://www.meta.ai","chat","free","ادخله من الموقع أو من تطبيقات Meta.","Use it on the site or inside Meta apps."],
+["Duck.ai","محادثة مع عدة نماذج بخصوصية أعلى.","Chat with several models with more privacy.","https://duck.ai","chat","free","افتح الرابط وابدأ بدون تسجيل.","Open the link and start without signing up."],
+["LMArena","قارن بين نماذج الذكاء الاصطناعي وشوف أيها أفضل.","Compare AI models side by side and see which is better.","https://lmarena.ai","chat","free","اكتب سؤالك وقارن بين جوابين من نموذجين.","Ask a question and compare answers from two models."],
+["Claude","مساعد Anthropic، قوي بالكتابة والبرمجة.","Anthropic's assistant, strong at writing and coding.","https://claude.ai","chat","part","سجّل بإيميلك وجرّب الخطة المجانية.","Sign up with email and try the free plan."],
+["Perplexity","بحث ذكي مع مصادر.","AI search with sources.","https://www.perplexity.ai","chat","part","اكتب سؤالك وشوف المصادر تحت الجواب.","Ask a question and check the sources under the answer."],
+["Microsoft Copilot","مساعد Microsoft المجاني.","Microsoft's free assistant.","https://copilot.microsoft.com","chat","free","افتحه من الموقع أو من متصفح Edge.","Open it on the site or in the Edge browser."],
+["Grok","مساعد xAI.","xAI's assistant.","https://grok.com","chat","part","ادخل من الموقع أو من منصة X.","Use it on the site or on X."],
+["NotebookLM","لخّص مستنداتك واسألها.","Summarize your documents and ask them questions.","https://notebooklm.google.com","chat","part","ارفع ملف PDF واسأل عن محتواه.","Upload a PDF and ask about its content."],
+["Google Colab","شغّل كود بايثون ونماذج على سيرفرات قوقل.","Run Python and models on Google's servers.","https://colab.research.google.com","code","part","ادخل بحساب قوقل وافتح دفتراً جديداً.","Sign in with Google and open a new notebook."],
+["GitHub Copilot","مساعد برمجة داخل المحرر.","A coding assistant inside your editor.","https://github.com/features/copilot","code","part","ثبّت الإضافة في VS Code وسجّل بحساب GitHub.","Install the VS Code extension and sign in with GitHub."],
+["Cursor","محرر أكواد بالذكاء الاصطناعي.","An AI code editor.","https://cursor.com","code","part","نزّله وافتح مشروعك.","Download it and open your project."],
+["Continue","إضافة مفتوحة المصدر لمساعد البرمجة.","An open-source coding assistant extension.","https://www.continue.dev","code","free","ثبّت الإضافة واربطها بنموذج محلي.","Install the extension and connect a local model."],
+["Claude Code","مساعد برمجة من سطر الأوامر.","A coding assistant for the command line.","https://www.anthropic.com/claude-code","code","paid","يحتاج حساباً مدفوعاً.","Requires a paid account."],
+["Stable Diffusion","توليد صور بنماذج مفتوحة.","Image generation with open models.","https://stability.ai","image","free","شغّله محلياً بواجهة مثل ComfyUI.","Run it locally with an interface like ComfyUI."],
+["ComfyUI","واجهة بصرية لتوليد الصور محلياً.","A visual interface for local image generation.","https://www.comfy.org","image","free","نزّله واربطه بنموذج صور مفتوح.","Install it and connect an open image model."],
+["FLUX","نماذج توليد صور عالية الجودة.","High-quality image generation models.","https://blackforestlabs.ai","image","part","جرّبه عبر مواقع تستضيفه مثل Hugging Face.","Try it through sites that host it, like Hugging Face."],
+["Midjourney","من أفضل أدوات توليد الصور.","One of the best image generators.","https://www.midjourney.com","image","paid","يحتاج اشتراكاً مدفوعاً.","Requires a paid subscription."],
+["Leonardo AI","توليد وتحرير صور.","Generate and edit images.","https://leonardo.ai","image","part","سجّل واستخدم الرصيد المجاني اليومي.","Sign up and use the daily free credits."],
+["Ideogram","توليد صور مع نصوص داخلها.","Generate images with readable text in them.","https://ideogram.ai","image","part","سجّل واكتب وصف الصورة.","Sign up and describe your image."],
+["Canva","تصميم مع أدوات ذكاء اصطناعي.","Design with built-in AI tools.","https://www.canva.com","image","part","ابدأ بقالب جاهز وجرّب أدوات الذكاء.","Start from a template and try the AI tools."],
+["Whisper","تحويل الكلام لنص ويدعم العربي.","Speech to text, with Arabic support.","https://github.com/openai/whisper","av","free","شغّله محلياً لتفريغ ملفات الصوت.","Run it locally to transcribe audio files.",1],
+["Piper","تحويل نص لصوت محلياً.","Local text to speech.","https://github.com/rhasspy/piper","av","free","نزّل صوتاً وشغّله من سطر الأوامر.","Download a voice and run it from the command line."],
+["ElevenLabs","تحويل نص لصوت واقعي.","Realistic text to speech.","https://elevenlabs.io","av","part","سجّل واستخدم الرصيد المجاني الشهري.","Sign up and use the monthly free credits."],
+["Runway","توليد وتحرير فيديو.","Generate and edit video.","https://runwayml.com","av","part","سجّل وجرّب الرصيد المجاني.","Sign up and try the free credits."],
+["CapCut","مونتاج فيديو بأدوات ذكية.","Video editing with smart tools.","https://www.capcut.com","av","part","نزّل التطبيق وابدأ مشروعاً جديداً.","Install the app and start a new project."],
+["Tesseract OCR","استخراج النص من الصور ويدعم العربي.","Extract text from images, with Arabic support.","https://github.com/tesseract-ocr/tesseract","prod","free","ثبّته واختر لغة العربية عند التشغيل.","Install it and choose Arabic as the language.",1],
+["DeepL","ترجمة دقيقة.","Accurate translation.","https://www.deepl.com","prod","part","الصق النص واختر اللغة.","Paste the text and choose the language."],
+["Gamma","عروض ومستندات بالذكاء الاصطناعي.","AI-made presentations and documents.","https://gamma.app","prod","part","اكتب فكرة العرض ويطلع لك جاهز.","Type your idea and get a ready deck."],
+["Notion AI","ملاحظات ومهام مع مساعد ذكي.","Notes and tasks with a smart assistant.","https://www.notion.com/product/ai","prod","paid","يحتاج خطة مدفوعة.","Requires a paid plan."]
 ];
-const P={free:["مجاني","free"],part:["مجاني جزئياً","part"],paid:["مدفوع","paid"]};
-let cat="الكل",price="مجاني",q="";
-const cats=["الكل",...new Set(T.map(t=>t[3]))];
+const PICKS={
+a:[["أكتب وأسأل","Write & ask"],["Google AI Studio","Duck.ai","Microsoft Copilot"]],
+b:[["أصمم صور","Make images"],["ComfyUI","Stable Diffusion","Leonardo AI"]],
+c:[["أبرمج","Code"],["DeepSeek","Continue","Google Colab"]],
+d:[["صوت وفيديو","Audio & video"],["Whisper","Piper","CapCut"]],
+e:[["بدون إنترنت","Offline"],["Ollama","LM Studio","Jan"]],
+f:[["أبي بالعربي","In Arabic"],["Fanar","Jais","Qwen"]]
+};
+// [nameAr, nameEn, descAr, descEn, url]
+const KW=[
+["الجهاز المركزي لتكنولوجيا المعلومات (CAIT)","Central Agency for Information Technology (CAIT)","يقود التحول الرقمي الحكومي في الكويت ويدعم تبني الذكاء الاصطناعي في الجهات العامة.","Leads government digital transformation in Kuwait and supports AI adoption in public entities.","https://www.cait.gov.kw"],
+["هيئة الاتصالات وتقنية المعلومات (CITRA)","Communication and Information Technology Regulatory Authority (CITRA)","الجهة المنظمة لقطاع الاتصالات وتقنية المعلومات، وأعلنت عن تحديث أنظمة استخدام الذكاء الاصطناعي.","Regulator of the telecom and IT sector; it announced it is updating AI usage regulations.","https://www.citra.gov.kw"],
+["جامعة الكويت","Kuwait University","أعلنت برنامج علم البيانات والذكاء الاصطناعي لعام 2025-2026.","Announced a Data Science and AI program for 2025-2026.","https://www.ku.edu.kw"],
+["الجامعة الأمريكية في الكويت (AUK)","American University of Kuwait (AUK)","استضافت منتدى عن تبني الذكاء الاصطناعي في التعليم العالي.","Hosted a forum on AI adoption in higher education.","https://www.auk.edu.kw"],
+["معهد الكويت للأبحاث العلمية (KISR)","Kuwait Institute for Scientific Research (KISR)","مؤسسة بحثية وطنية في الكويت.","A national research institution in Kuwait.","https://www.kisr.edu.kw"]
+];
+const P={free:"free",part:"part",paid:"paid"};
+let L="ar",TH="dark",cat="all",price="free",q="",pick="a";
+try{L=localStorage.getItem("lang")==="en"?"en":"ar"}catch(e){}
+try{TH=localStorage.getItem("theme")==="light"?"light":"dark"}catch(e){}
 const $=id=>document.getElementById(id);
-function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const lg=()=>L==="en"?1:0;
 function chips(el,list,get,set){
   el.innerHTML="";
-  list.forEach(n=>{const b=document.createElement("button");b.className="chip"+(get()===n?" on":"");b.textContent=n;
-    b.onclick=()=>{set(n);render()};el.appendChild(b)});
+  list.forEach(([k,label])=>{const b=document.createElement("button");b.className="chip"+(get()===k?" on":"");b.textContent=label;b.onclick=()=>{set(k);render()};el.appendChild(b)});
 }
 function cardHTML(t){
-  const wa="https://wa.me/?text="+encodeURIComponent(t[0]+" - "+t[2]+"\nمن دليل الكويت للذكاء الاصطناعي: https://29kuwait.github.io/kuwait-ai-directory/");
-  return `<div class="card"><div class="row"><h3>${esc(t[0])}</h3><div class="tags">${t[6]?'<span class="tag ar">عربي</span>':''}<span class="tag ${P[t[4]][1]}">${P[t[4]][0]}</span></div></div><p>${esc(t[1])}</p><div class="tip"><b>كيف تبدأ:</b> ${esc(t[5])}</div><div class="row"><span class="cat">${esc(t[3])}</span><div class="acts"><a class="share" href="${wa}" target="_blank" rel="noopener">واتساب</a><a class="btn" href="${t[2]}" target="_blank" rel="noopener">افتح</a></div></div></div>`;
+  const i=lg(), name=t[0], url=t[3];
+  const wa="https://wa.me/?text="+encodeURIComponent(name+" - "+url+"\n"+U.shareTxt[i]+": https://29kuwait.github.io/kuwait-ai-directory/");
+  return `<div class="card"><div class="row"><h3 dir="ltr">${esc(name)}</h3><div class="tags">${t[8]?`<span class="tag ar">${U.arab[i]}</span>`:""}<span class="tag ${P[t[5]]}">${U[t[5]][i]}</span></div></div><p>${esc(t[1+i])}</p><div class="tip"><b>${U.start[i]}</b> ${esc(t[6+i])}</div><div class="row"><span class="cat">${CATS[t[4]][i]}</span><div class="acts"><a class="share" href="${wa}" target="_blank" rel="noopener">${U.wa[i]}</a><a class="btn" href="${url}" target="_blank" rel="noopener">${U.open[i]}</a></div></div></div>`;
 }
-const PICKS={"أكتب وأسأل":["Google AI Studio","Duck.ai","Microsoft Copilot"],"أصمم صور":["ComfyUI","Stable Diffusion","Leonardo AI"],"أبرمج":["DeepSeek","Continue","Google Colab"],"صوت وفيديو":["Whisper","Piper","CapCut"],"بدون إنترنت":["Ollama","LM Studio","Jan"],"أبي بالعربي":["Fanar","Jais","Qwen"]};
-let pick="أكتب وأسأل";
 function renderPicks(){
-  const el=$("picks"); el.innerHTML="";
-  Object.keys(PICKS).forEach(k=>{const b=document.createElement("button");b.className="pick"+(pick===k?" on":"");b.textContent=k;b.onclick=()=>{pick=k;renderPicks()};el.appendChild(b)});
-  $("recs").innerHTML=PICKS[pick].map(n=>T.find(t=>t[0]===n)).filter(Boolean).map(cardHTML).join("");
+  const i=lg(), el=$("picks"); el.innerHTML="";
+  Object.keys(PICKS).forEach(k=>{const b=document.createElement("button");b.className="pick"+(pick===k?" on":"");b.textContent=PICKS[k][0][i];b.onclick=()=>{pick=k;renderPicks()};el.appendChild(b)});
+  $("recs").innerHTML=PICKS[pick][1].map(n=>T.find(t=>t[0]===n)).filter(Boolean).map(cardHTML).join("");
 }
-const KW=[
-["الجهاز المركزي لتكنولوجيا المعلومات (CAIT)","يقود التحول الرقمي الحكومي في الكويت ويدعم تبني الذكاء الاصطناعي في الجهات العامة.","https://www.cait.gov.kw"],
-["هيئة الاتصالات وتقنية المعلومات (CITRA)","الجهة المنظمة لقطاع الاتصالات وتقنية المعلومات، وأعلنت عن تحديث أنظمة استخدام الذكاء الاصطناعي.","https://www.citra.gov.kw"],
-["جامعة الكويت","أعلنت برنامج علم البيانات والذكاء الاصطناعي لعام 2025-2026.","https://www.ku.edu.kw"],
-["الجامعة الأمريكية في الكويت (AUK)","استضافت منتدى عن تبني الذكاء الاصطناعي في التعليم العالي.","https://www.auk.edu.kw"],
-["معهد الكويت للأبحاث العلمية (KISR)","مؤسسة بحثية وطنية في الكويت.","https://www.kisr.edu.kw"]
-];
 function renderKW(){
-  $("kwlist").innerHTML=KW.map(k=>`<div class="card"><h3>${esc(k[0])}</h3><p style="flex:1">${esc(k[1])}</p><div class="row"><span class="cat">الكويت</span><a class="btn" href="${k[2]}" target="_blank" rel="noopener">الموقع</a></div></div>`).join("");
+  const i=lg();
+  $("kwlist").innerHTML=KW.map(k=>`<div class="card"><h3>${esc(k[i])}</h3><p style="flex:1">${esc(k[2+i])}</p><div class="row"><span class="cat">${U.kw[i]}</span><a class="btn" href="${k[4]}" target="_blank" rel="noopener">${U.site[i]}</a></div></div>`).join("");
 }
 function render(){
-  chips($("cats"),cats,()=>cat,v=>cat=v);
-  chips($("prices"),["الكل","مجاني","مجاني جزئياً","مدفوع"],()=>price,v=>price=v);
-  const list=T.filter(t=>(cat==="الكل"||t[3]===cat)&&(price==="الكل"||P[t[4]][0]===price)&&(t[0]+t[1]).toLowerCase().includes(q));
-  $("count").textContent=list.length+" أداة من "+T.length;
-  $("grid").innerHTML=list.length?list.map(cardHTML).join(""):'<div class="empty">ما لقينا أداة بهالاسم. افتح Issue ونضيفها.</div>';
+  const i=lg();
+  chips($("cats"),[["all",U.all[i]],...Object.keys(CATS).map(k=>[k,CATS[k][i]])],()=>cat,v=>cat=v);
+  chips($("prices"),[["all",U.all[i]],["free",U.free[i]],["part",U.part[i]],["paid",U.paid[i]]],()=>price,v=>price=v);
+  const list=T.filter(t=>(cat==="all"||t[4]===cat)&&(price==="all"||t[5]===price)&&(t[0]+t[1]+t[2]).toLowerCase().includes(q));
+  $("count").textContent=list.length+" "+U.of[i]+" "+T.length;
+  $("grid").innerHTML=list.length?list.map(cardHTML).join(""):`<div class="empty">${U.empty[i]}</div>`;
+  renderPicks();renderKW();
+}
+function applyStatic(){
+  const i=lg();
+  document.documentElement.lang=L;document.documentElement.dir=L==="en"?"ltr":"rtl";
+  document.documentElement.dataset.theme=TH;
+  document.querySelectorAll("[data-i]").forEach(el=>{el.textContent=S[el.dataset.i][i]});
+  $("q").placeholder=U.search[i];
+  $("lang").textContent=L==="en"?"العربية":"English";
+  $("theme").textContent=TH==="dark"?"☀":"☾";
+  document.title=S.title[i]+(L==="en"?"":" | Kuwait AI Directory");
+  render();
 }
 $("q").oninput=e=>{q=e.target.value.trim().toLowerCase();render()};
-render();renderPicks();renderKW();
+$("lang").onclick=()=>{L=L==="en"?"ar":"en";try{localStorage.setItem("lang",L)}catch(e){}applyStatic()};
+$("theme").onclick=()=>{TH=TH==="dark"?"light":"dark";try{localStorage.setItem("theme",TH)}catch(e){}applyStatic()};
+applyStatic();
 </script>
 </body>
 </html>
