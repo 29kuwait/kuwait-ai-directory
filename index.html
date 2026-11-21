@@ -4,103 +4,143 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>دليل الكويت للذكاء الاصطناعي</title>
-<meta name="description" content="دليل عربي مفتوح المصدر لأدوات الذكاء الاصطناعي، مع بدائل مجانية ومفتوحة المصدر.">
+<meta name="description" content="موسوعة مجانية مفتوحة المصدر لأدوات الذكاء الاصطناعي بالعربي، لأهل الكويت والوطن العربي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b1220;--card:#131c31;--line:#22304f;--text:#e8eefc;--muted:#9fb0d0;--accent:#64ffda;--free:#3ddc84;--part:#ffc857;--paid:#ff7b7b}
+:root{--bg:#0a0e17;--bg2:#0f1626;--card:#111a2c;--line:#1f2b44;--text:#eef2fb;--muted:#93a1bd;--gold:#d8b45a;--gold2:#f2d98c;--free:#4fd6a0;--part:#e6b85c;--paid:#ef8a8a}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.7}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-header{text-align:center;padding:48px 0 24px}
-h1{color:var(--accent);font-size:clamp(28px,6vw,44px);margin:0 0 8px}
-header p{color:var(--muted);font-size:18px;margin:0 auto;max-width:640px}
-.tools{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:24px 0}
-input[type=search]{flex:1 1 260px;max-width:420px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:16px}
-.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:8px}
-.chip{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer;font-size:14px;font-family:inherit}
-.chip.on{background:var(--accent);color:#06241d;border-color:var(--accent);font-weight:bold}
-.count{text-align:center;color:var(--muted);margin:12px 0 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;padding-bottom:40px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px}
-.card h3{margin:0;font-size:18px}
-.card p{margin:0;color:var(--muted);font-size:14px;flex:1}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1200px 500px at 50% -120px,#1a2745 0,transparent 70%),var(--bg);color:var(--text);font-family:Tajawal,Tahoma,"Segoe UI",sans-serif;line-height:1.8}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{text-align:center;padding:64px 0 28px}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);padding:4px 16px;border-radius:999px;font-size:13px;letter-spacing:.5px;margin-bottom:18px}
+h1{font-size:clamp(30px,6vw,52px);font-weight:800;margin:0 0 12px;background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{color:var(--muted);font-size:clamp(16px,2.4vw,19px);margin:0 auto;max-width:620px}
+.goals{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:34px 0 10px}
+.goal{background:linear-gradient(180deg,var(--bg2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.goal b{display:block;color:var(--gold2);font-size:17px;margin-bottom:4px}
+.goal span{color:var(--muted);font-size:14.5px}
+.bar{position:sticky;top:0;z-index:5;background:rgba(10,14,23,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 0;margin-top:26px}
+input[type=search]{width:100%;padding:13px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:16px;outline:none}
+input[type=search]:focus{border-color:var(--gold)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{padding:6px 15px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;font:inherit;font-size:14px;transition:.15s}
+.chip:hover{color:var(--text);border-color:var(--gold)}
+.chip.on{background:var(--gold);color:#1a1405;border-color:var(--gold);font-weight:700}
+.count{color:var(--muted);margin:22px 0 14px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;padding-bottom:50px}
+.card{background:linear-gradient(180deg,var(--bg2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.tag{font-size:12px;padding:2px 10px;border-radius:999px;border:1px solid}
+.card h3{margin:0;font-size:19px;font-weight:700}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.tip{background:rgba(216,180,90,.07);border:1px solid rgba(216,180,90,.18);border-radius:12px;padding:8px 12px;font-size:13.5px;color:#d9cfae;flex:1}
+.tip b{color:var(--gold2)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;padding:1px 10px;border-radius:999px;border:1px solid}
 .free{color:var(--free)}.part{color:var(--part)}.paid{color:var(--paid)}
-a.btn{display:inline-block;background:var(--accent);color:#06241d;padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:14px;text-align:center}
-.empty{text-align:center;color:var(--muted);padding:40px}
-footer{border-top:1px solid var(--line);text-align:center;color:var(--muted);padding:24px 16px;font-size:14px}
-footer a{color:var(--accent)}
+.ar{color:var(--gold2)}
+.cat{color:var(--muted);font-size:13px}
+a.btn{color:#1a1405;background:linear-gradient(90deg,var(--gold2),var(--gold));padding:6px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:50px}
+footer{border-top:1px solid var(--line);text-align:center;color:var(--muted);padding:28px 16px;font-size:14px}
+footer a{color:var(--gold2)}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <h1>🇰🇼 دليل الكويت للذكاء الاصطناعي</h1>
-  <p>دليل عربي مفتوح المصدر لأدوات الذكاء الاصطناعي، مع بدائل مجانية ومفتوحة المصدر.</p>
+  <span class="badge">مجاني · مفتوح المصدر · بدون إعلانات</span>
+  <h1>دليل الكويت للذكاء الاصطناعي</h1>
+  <p>موسوعة مجانية لأدوات الذكاء الاصطناعي بالعربي، مصنفة وبسيطة، لأهل الكويت والوطن العربي.</p>
+  <div class="goals">
+    <div class="goal"><b>مجاني 100%</b><span>الموقع مفتوح المصدر بدون اشتراك ولا دفع ولا إعلانات.</span></div>
+    <div class="goal"><b>كل الأدوات في مكان واحد</b><span>كتابة وصور وبرمجة وصوت، كلها مصنفة بالعربي.</span></div>
+    <div class="goal"><b>لأهل الكويت والوطن العربي</b><span>نوضح لك أفضل الأدوات المجانية وكيف تبدأ فيها.</span></div>
+  </div>
 </header>
-<div class="tools"><input type="search" id="q" placeholder="ابحث عن أداة..." aria-label="بحث"></div>
-<div class="chips" id="cats"></div>
-<div class="chips" id="prices"></div>
-<div class="count" id="count"></div>
-<div class="grid" id="grid"></div>
+</div>
+<div class="bar"><div class="wrap">
+  <input type="search" id="q" placeholder="ابحث عن أداة..." aria-label="بحث">
+  <div class="chips" id="cats"></div>
+  <div class="chips" id="prices"></div>
+</div></div>
+<div class="wrap">
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
 </div>
 <footer>
-  الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الأسعار تتغير، تأكد من الموقع الرسمي.<br>
+  الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الشروط والأسعار تتغير، تأكد من الموقع الرسمي.<br>
   عندك أداة؟ <a href="https://github.com/29kuwait/kuwait-ai-directory/issues">افتح Issue</a> · رخصة MIT · صنع في الكويت ❤️
 </footer>
 <script>
+// [اسم, وصف, رابط, فئة, سعر, كيف تبدأ, عربي؟]
 const T=[
-// [اسم, وصف, رابط, فئة, سعر: free/part/paid]
-["Llama","نماذج Meta المفتوحة، تقدر تشغلها على جهازك","https://www.llama.com","نماذج مفتوحة","free"],
-["DeepSeek","قوي بالبرمجة والمنطق، ونماذجه مفتوحة","https://www.deepseek.com","نماذج مفتوحة","free"],
-["Qwen","نماذج Alibaba، دعمها للعربي جيد","https://qwen.ai","نماذج مفتوحة","free"],
-["Mistral","نماذج أوروبية مفتوحة وسريعة","https://mistral.ai","نماذج مفتوحة","part"],
-["Fanar","نموذج عربي من قطر","https://fanar.qa","نماذج مفتوحة","free"],
-["Hugging Face","أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي","https://huggingface.co","نماذج مفتوحة","free"],
-["Ollama","شغّل النماذج على جهازك بأمر واحد","https://ollama.com","تشغيل محلي","free"],
-["LM Studio","واجهة سهلة لتشغيل النماذج محلياً","https://lmstudio.ai","تشغيل محلي","free"],
-["Open WebUI","واجهة مثل ChatGPT تشتغل مع النماذج المحلية","https://openwebui.com","تشغيل محلي","free"],
-["ChatGPT","مساعد OpenAI الأشهر","https://chatgpt.com","محادثة وبحث","part"],
-["Gemini","مساعد Google ويدعم العربي","https://gemini.google.com","محادثة وبحث","part"],
-["Claude","مساعد Anthropic، قوي بالكتابة والبرمجة","https://claude.ai","محادثة وبحث","part"],
-["Perplexity","بحث ذكي مع مصادر","https://www.perplexity.ai","محادثة وبحث","part"],
-["Microsoft Copilot","مساعد Microsoft المجاني","https://copilot.microsoft.com","محادثة وبحث","free"],
-["Grok","مساعد xAI","https://grok.com","محادثة وبحث","part"],
-["NotebookLM","لخّص مستنداتك واسألها","https://notebooklm.google.com","محادثة وبحث","part"],
-["Stable Diffusion","توليد صور بنماذج مفتوحة","https://stability.ai","صور","free"],
-["FLUX","نماذج توليد صور عالية الجودة","https://blackforestlabs.ai","صور","part"],
-["Midjourney","من أفضل أدوات توليد الصور","https://www.midjourney.com","صور","paid"],
-["Leonardo AI","توليد وتحرير صور","https://leonardo.ai","صور","part"],
-["Ideogram","توليد صور مع نصوص داخلها","https://ideogram.ai","صور","part"],
-["Canva","تصميم مع أدوات ذكاء اصطناعي","https://www.canva.com","صور","part"],
-["GitHub Copilot","مساعد برمجة داخل المحرر","https://github.com/features/copilot","برمجة","part"],
-["Cursor","محرر أكواد بالذكاء الاصطناعي","https://cursor.com","برمجة","part"],
-["Continue","إضافة مفتوحة المصدر لمساعد البرمجة","https://www.continue.dev","برمجة","free"],
-["Claude Code","مساعد برمجة من سطر الأوامر","https://www.anthropic.com/claude-code","برمجة","paid"],
-["Whisper","تحويل الكلام لنص، مفتوح المصدر","https://github.com/openai/whisper","صوت وفيديو","free"],
-["ElevenLabs","تحويل نص لصوت واقعي","https://elevenlabs.io","صوت وفيديو","part"],
-["Runway","توليد وتحرير فيديو","https://runwayml.com","صوت وفيديو","part"],
-["CapCut","مونتاج فيديو بأدوات ذكية","https://www.capcut.com","صوت وفيديو","part"],
-["DeepL","ترجمة دقيقة","https://www.deepl.com","إنتاجية","part"],
-["Gamma","عروض ومستندات بالذكاء الاصطناعي","https://gamma.app","إنتاجية","part"],
-["Notion AI","ملاحظات ومهام مع مساعد ذكي","https://www.notion.com/product/ai","إنتاجية","paid"]
+["Llama","نماذج Meta المفتوحة.","https://www.llama.com","نماذج مفتوحة","free","حمّله وشغّله على جهازك عبر Ollama."],
+["DeepSeek","قوي بالبرمجة والمنطق، ونماذجه مفتوحة.","https://www.deepseek.com","نماذج مفتوحة","free","افتح الموقع وسجّل بإيميلك وابدأ المحادثة."],
+["Qwen","نماذج Alibaba، دعمها للعربي جيد.","https://qwen.ai","نماذج مفتوحة","free","جرّبه من موقعه مباشرة بدون تثبيت."],
+["Mistral","نماذج أوروبية مفتوحة وسريعة.","https://mistral.ai","نماذج مفتوحة","part","ادخل Le Chat وجرّب الخطة المجانية."],
+["Fanar","نموذج عربي من قطر.","https://fanar.qa","نماذج مفتوحة","free","افتح الموقع واسأله بالعربي مباشرة.",1],
+["Jais","نموذج عربي إنجليزي من الإمارات.","https://inceptionai.ai/jais","نماذج مفتوحة","free","ادخل موقعه وجرّب المحادثة بالعربي.",1],
+["AceGPT","نموذج لغوي عربي مفتوح المصدر.","https://github.com/FreedomIntelligence/AceGPT","نماذج مفتوحة","free","حمّله من GitHub، يناسب المطورين.",1],
+["Hugging Face","أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي.","https://huggingface.co","نماذج مفتوحة","free","ابحث عن نموذج وجرّبه من Spaces بدون تثبيت."],
+["Hugging Face Chat","محادثة مع نماذج مفتوحة بدون تثبيت.","https://huggingface.co/chat","نماذج مفتوحة","free","افتح الرابط واختر النموذج اللي تبيه."],
+["Ollama","شغّل النماذج على جهازك بأمر واحد.","https://ollama.com","تشغيل محلي","free","ثبّته، ثم اكتب ollama run مع اسم النموذج."],
+["LM Studio","واجهة سهلة لتشغيل النماذج محلياً.","https://lmstudio.ai","تشغيل محلي","free","نزّل البرنامج واختر نموذجاً من القائمة."],
+["Jan","تطبيق يشغّل النماذج على جهازك بدون إنترنت.","https://jan.ai","تشغيل محلي","free","نزّله وحمّل نموذجاً وابدأ المحادثة."],
+["GPT4All","شغّل نماذج على جهازك بدون كرت شاشة قوي.","https://gpt4all.io","تشغيل محلي","free","نزّل التطبيق واختر نموذجاً صغيراً."],
+["Open WebUI","واجهة مثل ChatGPT تشتغل مع النماذج المحلية.","https://openwebui.com","تشغيل محلي","free","يُركّب عادةً بـ Docker ويرتبط مع Ollama."],
+["ChatGPT","مساعد OpenAI الأشهر.","https://chatgpt.com","محادثة وبحث","part","سجّل بإيميلك، الخطة المجانية لها حد يومي."],
+["Gemini","مساعد Google ويدعم العربي.","https://gemini.google.com","محادثة وبحث","part","ادخل بحساب قوقل وابدأ."],
+["Google AI Studio","جرّب نماذج Gemini مجاناً.","https://aistudio.google.com","محادثة وبحث","free","ادخل بحساب قوقل وجرّب النماذج في المتصفح."],
+["Meta AI","مساعد Meta.","https://www.meta.ai","محادثة وبحث","free","ادخله من الموقع أو من تطبيقات Meta."],
+["Duck.ai","محادثة مع عدة نماذج بخصوصية أعلى.","https://duck.ai","محادثة وبحث","free","افتح الرابط وابدأ بدون تسجيل."],
+["LMArena","قارن بين نماذج الذكاء الاصطناعي وشوف أيها أفضل.","https://lmarena.ai","محادثة وبحث","free","اكتب سؤالك وقارن بين جوابين من نموذجين."],
+["Google Colab","شغّل كود بايثون ونماذج على سيرفرات قوقل.","https://colab.research.google.com","برمجة","part","ادخل بحساب قوقل وافتح دفتراً جديداً."],
+["Claude","مساعد Anthropic، قوي بالكتابة والبرمجة.","https://claude.ai","محادثة وبحث","part","سجّل بإيميلك وجرّب الخطة المجانية."],
+["Perplexity","بحث ذكي مع مصادر.","https://www.perplexity.ai","محادثة وبحث","part","اكتب سؤالك وشوف المصادر تحت الجواب."],
+["Microsoft Copilot","مساعد Microsoft المجاني.","https://copilot.microsoft.com","محادثة وبحث","free","افتحه من الموقع أو من متصفح Edge."],
+["Grok","مساعد xAI.","https://grok.com","محادثة وبحث","part","ادخل من الموقع أو من منصة X."],
+["NotebookLM","لخّص مستنداتك واسألها.","https://notebooklm.google.com","محادثة وبحث","part","ارفع ملف PDF واسأل عن محتواه."],
+["Stable Diffusion","توليد صور بنماذج مفتوحة.","https://stability.ai","صور","free","شغّله محلياً بواجهة مثل ComfyUI."],
+["ComfyUI","واجهة بصرية لتوليد الصور محلياً.","https://www.comfy.org","صور","free","نزّله واربطه بنموذج صور مفتوح."],
+["FLUX","نماذج توليد صور عالية الجودة.","https://blackforestlabs.ai","صور","part","جرّبه عبر مواقع تستضيفه مثل Hugging Face."],
+["Midjourney","من أفضل أدوات توليد الصور.","https://www.midjourney.com","صور","paid","يحتاج اشتراكاً مدفوعاً."],
+["Leonardo AI","توليد وتحرير صور.","https://leonardo.ai","صور","part","سجّل واستخدم الرصيد المجاني اليومي."],
+["Ideogram","توليد صور مع نصوص داخلها.","https://ideogram.ai","صور","part","سجّل واكتب وصف الصورة."],
+["Canva","تصميم مع أدوات ذكاء اصطناعي.","https://www.canva.com","صور","part","ابدأ بقالب جاهز وجرّب أدوات الذكاء."],
+["GitHub Copilot","مساعد برمجة داخل المحرر.","https://github.com/features/copilot","برمجة","part","ثبّت الإضافة في VS Code وسجّل بحساب GitHub."],
+["Cursor","محرر أكواد بالذكاء الاصطناعي.","https://cursor.com","برمجة","part","نزّله وافتح مشروعك."],
+["Continue","إضافة مفتوحة المصدر لمساعد البرمجة.","https://www.continue.dev","برمجة","free","ثبّت الإضافة واربطها بنموذج محلي."],
+["Claude Code","مساعد برمجة من سطر الأوامر.","https://www.anthropic.com/claude-code","برمجة","paid","يحتاج حساباً مدفوعاً."],
+["Whisper","تحويل الكلام لنص ويدعم العربي.","https://github.com/openai/whisper","صوت وفيديو","free","شغّله محلياً لتفريغ ملفات الصوت.",1],
+["Piper","تحويل نص لصوت محلياً.","https://github.com/rhasspy/piper","صوت وفيديو","free","نزّل صوتاً وشغّله من سطر الأوامر."],
+["ElevenLabs","تحويل نص لصوت واقعي.","https://elevenlabs.io","صوت وفيديو","part","سجّل واستخدم الرصيد المجاني الشهري."],
+["Runway","توليد وتحرير فيديو.","https://runwayml.com","صوت وفيديو","part","سجّل وجرّب الرصيد المجاني."],
+["CapCut","مونتاج فيديو بأدوات ذكية.","https://www.capcut.com","صوت وفيديو","part","نزّل التطبيق وابدأ مشروعاً جديداً."],
+["Tesseract OCR","استخراج النص من الصور ويدعم العربي.","https://github.com/tesseract-ocr/tesseract","إنتاجية","free","ثبّته واختر لغة العربية عند التشغيل.",1],
+["DeepL","ترجمة دقيقة.","https://www.deepl.com","إنتاجية","part","الصق النص واختر اللغة."],
+["Gamma","عروض ومستندات بالذكاء الاصطناعي.","https://gamma.app","إنتاجية","part","اكتب فكرة العرض ويطلع لك جاهز."],
+["Notion AI","ملاحظات ومهام مع مساعد ذكي.","https://www.notion.com/product/ai","إنتاجية","paid","يحتاج خطة مدفوعة."]
 ];
 const P={free:["مجاني","free"],part:["مجاني جزئياً","part"],paid:["مدفوع","paid"]};
-let cat="الكل",price="الكل",q="";
+let cat="الكل",price="مجاني",q="";
 const cats=["الكل",...new Set(T.map(t=>t[3]))];
 const $=id=>document.getElementById(id);
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 function chips(el,list,get,set){
   el.innerHTML="";
   list.forEach(n=>{const b=document.createElement("button");b.className="chip"+(get()===n?" on":"");b.textContent=n;
     b.onclick=()=>{set(n);render()};el.appendChild(b)});
 }
-function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 function render(){
   chips($("cats"),cats,()=>cat,v=>cat=v);
   chips($("prices"),["الكل","مجاني","مجاني جزئياً","مدفوع"],()=>price,v=>price=v);
   const list=T.filter(t=>(cat==="الكل"||t[3]===cat)&&(price==="الكل"||P[t[4]][0]===price)&&(t[0]+t[1]).toLowerCase().includes(q));
-  $("count").textContent=list.length+" أداة";
-  $("grid").innerHTML=list.length?list.map(t=>`<div class="card"><div class="row"><h3>${esc(t[0])}</h3><span class="tag ${P[t[4]][1]}">${P[t[4]][0]}</span></div><p>${esc(t[1])}</p><div class="row"><small style="color:var(--muted)">${esc(t[3])}</small><a class="btn" href="${t[2]}" target="_blank" rel="noopener">افتح</a></div></div>`).join(""):'<div class="empty">ما لقينا أداة بهالاسم. افتح Issue ونضيفها.</div>';
+  $("count").textContent=list.length+" أداة من "+T.length;
+  $("grid").innerHTML=list.length?list.map(t=>`<div class="card"><div class="row"><h3>${esc(t[0])}</h3><div class="tags">${t[6]?'<span class="tag ar">عربي</span>':''}<span class="tag ${P[t[4]][1]}">${P[t[4]][0]}</span></div></div><p>${esc(t[1])}</p><div class="tip"><b>كيف تبدأ:</b> ${esc(t[5])}</div><div class="row"><span class="cat">${esc(t[3])}</span><a class="btn" href="${t[2]}" target="_blank" rel="noopener">افتح</a></div></div>`).join(""):'<div class="empty">ما لقينا أداة بهالاسم. افتح Issue ونضيفها.</div>';
 }
 $("q").oninput=e=>{q=e.target.value.trim().toLowerCase();render()};
 render();
