@@ -1,85 +1,99 @@
 # 🇰🇼 دليل الكويت للذكاء الاصطناعي
 
-**دليل عربي مفتوح المصدر للمجتمع**
+**موسوعة مجانية مفتوحة المصدر لأدوات الذكاء الاصطناعي بالعربي**
 
 🌐 **الموقع:** https://29kuwait.github.io/kuwait-ai-directory/
 
-## البيان
+## هدف المشروع
 
-الأدوات المدفوعة غالية، وفيه بدائل مفتوحة المصدر ومجانية تسوي نفس الشغل تقريباً.
-هدفنا نجمع لك أدوات الذكاء الاصطناعي في مكان واحد بالعربي، ونوضح لك وش مجاني وش مدفوع.
+1. **مجاني 100%:** مفتوح المصدر، بدون اشتراك ولا دفع ولا إعلانات.
+2. **كل الأدوات في مكان واحد:** كتابة وصور وبرمجة وصوت، مصنفة بالعربي.
+3. **لأهل الكويت والوطن العربي:** نوضح أفضل الأدوات المجانية وكيف تبدأ فيها.
 
-## الأدوات (33 أداة)
+## الأدوات (46 أداة)
 
 ### نماذج مفتوحة
 
-| الأداة | الوصف | السعر | الرابط |
+| الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| Llama | نماذج Meta المفتوحة، تقدر تشغلها على جهازك | مجاني | [www.llama.com](https://www.llama.com) |
-| DeepSeek | قوي بالبرمجة والمنطق، ونماذجه مفتوحة | مجاني | [www.deepseek.com](https://www.deepseek.com) |
-| Qwen | نماذج Alibaba، دعمها للعربي جيد | مجاني | [qwen.ai](https://qwen.ai) |
-| Mistral | نماذج أوروبية مفتوحة وسريعة | مجاني جزئياً | [mistral.ai](https://mistral.ai) |
-| Fanar | نموذج عربي من قطر | مجاني | [fanar.qa](https://fanar.qa) |
-| Hugging Face | أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي | مجاني | [huggingface.co](https://huggingface.co) |
+| [Llama](https://www.llama.com) | نماذج Meta المفتوحة. | مجاني | حمّله وشغّله على جهازك عبر Ollama. |
+| [DeepSeek](https://www.deepseek.com) | قوي بالبرمجة والمنطق، ونماذجه مفتوحة. | مجاني | افتح الموقع وسجّل بإيميلك وابدأ المحادثة. |
+| [Qwen](https://qwen.ai) | نماذج Alibaba، دعمها للعربي جيد. | مجاني | جرّبه من موقعه مباشرة بدون تثبيت. |
+| [Mistral](https://mistral.ai) | نماذج أوروبية مفتوحة وسريعة. | مجاني جزئياً | ادخل Le Chat وجرّب الخطة المجانية. |
+| [Fanar](https://fanar.qa) (عربي) | نموذج عربي من قطر. | مجاني | افتح الموقع واسأله بالعربي مباشرة. |
+| [Jais](https://inceptionai.ai/jais) (عربي) | نموذج عربي إنجليزي من الإمارات. | مجاني | ادخل موقعه وجرّب المحادثة بالعربي. |
+| [AceGPT](https://github.com/FreedomIntelligence/AceGPT) (عربي) | نموذج لغوي عربي مفتوح المصدر. | مجاني | حمّله من GitHub، يناسب المطورين. |
+| [Hugging Face](https://huggingface.co) | أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي. | مجاني | ابحث عن نموذج وجرّبه من Spaces بدون تثبيت. |
+| [Hugging Face Chat](https://huggingface.co/chat) | محادثة مع نماذج مفتوحة بدون تثبيت. | مجاني | افتح الرابط واختر النموذج اللي تبيه. |
 
 ### تشغيل محلي
 
-| الأداة | الوصف | السعر | الرابط |
+| الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| Ollama | شغّل النماذج على جهازك بأمر واحد | مجاني | [ollama.com](https://ollama.com) |
-| LM Studio | واجهة سهلة لتشغيل النماذج محلياً | مجاني | [lmstudio.ai](https://lmstudio.ai) |
-| Open WebUI | واجهة مثل ChatGPT تشتغل مع النماذج المحلية | مجاني | [openwebui.com](https://openwebui.com) |
+| [Ollama](https://ollama.com) | شغّل النماذج على جهازك بأمر واحد. | مجاني | ثبّته، ثم اكتب ollama run مع اسم النموذج. |
+| [LM Studio](https://lmstudio.ai) | واجهة سهلة لتشغيل النماذج محلياً. | مجاني | نزّل البرنامج واختر نموذجاً من القائمة. |
+| [Jan](https://jan.ai) | تطبيق يشغّل النماذج على جهازك بدون إنترنت. | مجاني | نزّله وحمّل نموذجاً وابدأ المحادثة. |
+| [GPT4All](https://gpt4all.io) | شغّل نماذج على جهازك بدون كرت شاشة قوي. | مجاني | نزّل التطبيق واختر نموذجاً صغيراً. |
+| [Open WebUI](https://openwebui.com) | واجهة مثل ChatGPT تشتغل مع النماذج المحلية. | مجاني | يُركّب عادةً بـ Docker ويرتبط مع Ollama. |
 
 ### محادثة وبحث
 
-| الأداة | الوصف | السعر | الرابط |
+| الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| ChatGPT | مساعد OpenAI الأشهر | مجاني جزئياً | [chatgpt.com](https://chatgpt.com) |
-| Gemini | مساعد Google ويدعم العربي | مجاني جزئياً | [gemini.google.com](https://gemini.google.com) |
-| Claude | مساعد Anthropic، قوي بالكتابة والبرمجة | مجاني جزئياً | [claude.ai](https://claude.ai) |
-| Perplexity | بحث ذكي مع مصادر | مجاني جزئياً | [www.perplexity.ai](https://www.perplexity.ai) |
-| Microsoft Copilot | مساعد Microsoft المجاني | مجاني | [copilot.microsoft.com](https://copilot.microsoft.com) |
-| Grok | مساعد xAI | مجاني جزئياً | [grok.com](https://grok.com) |
-| NotebookLM | لخّص مستنداتك واسألها | مجاني جزئياً | [notebooklm.google.com](https://notebooklm.google.com) |
-
-### صور
-
-| الأداة | الوصف | السعر | الرابط |
-|---|---|---|---|
-| Stable Diffusion | توليد صور بنماذج مفتوحة | مجاني | [stability.ai](https://stability.ai) |
-| FLUX | نماذج توليد صور عالية الجودة | مجاني جزئياً | [blackforestlabs.ai](https://blackforestlabs.ai) |
-| Midjourney | من أفضل أدوات توليد الصور | مدفوع | [www.midjourney.com](https://www.midjourney.com) |
-| Leonardo AI | توليد وتحرير صور | مجاني جزئياً | [leonardo.ai](https://leonardo.ai) |
-| Ideogram | توليد صور مع نصوص داخلها | مجاني جزئياً | [ideogram.ai](https://ideogram.ai) |
-| Canva | تصميم مع أدوات ذكاء اصطناعي | مجاني جزئياً | [www.canva.com](https://www.canva.com) |
+| [ChatGPT](https://chatgpt.com) | مساعد OpenAI الأشهر. | مجاني جزئياً | سجّل بإيميلك، الخطة المجانية لها حد يومي. |
+| [Gemini](https://gemini.google.com) | مساعد Google ويدعم العربي. | مجاني جزئياً | ادخل بحساب قوقل وابدأ. |
+| [Google AI Studio](https://aistudio.google.com) | جرّب نماذج Gemini مجاناً. | مجاني | ادخل بحساب قوقل وجرّب النماذج في المتصفح. |
+| [Meta AI](https://www.meta.ai) | مساعد Meta. | مجاني | ادخله من الموقع أو من تطبيقات Meta. |
+| [Duck.ai](https://duck.ai) | محادثة مع عدة نماذج بخصوصية أعلى. | مجاني | افتح الرابط وابدأ بدون تسجيل. |
+| [LMArena](https://lmarena.ai) | قارن بين نماذج الذكاء الاصطناعي وشوف أيها أفضل. | مجاني | اكتب سؤالك وقارن بين جوابين من نموذجين. |
+| [Claude](https://claude.ai) | مساعد Anthropic، قوي بالكتابة والبرمجة. | مجاني جزئياً | سجّل بإيميلك وجرّب الخطة المجانية. |
+| [Perplexity](https://www.perplexity.ai) | بحث ذكي مع مصادر. | مجاني جزئياً | اكتب سؤالك وشوف المصادر تحت الجواب. |
+| [Microsoft Copilot](https://copilot.microsoft.com) | مساعد Microsoft المجاني. | مجاني | افتحه من الموقع أو من متصفح Edge. |
+| [Grok](https://grok.com) | مساعد xAI. | مجاني جزئياً | ادخل من الموقع أو من منصة X. |
+| [NotebookLM](https://notebooklm.google.com) | لخّص مستنداتك واسألها. | مجاني جزئياً | ارفع ملف PDF واسأل عن محتواه. |
 
 ### برمجة
 
-| الأداة | الوصف | السعر | الرابط |
+| الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| GitHub Copilot | مساعد برمجة داخل المحرر | مجاني جزئياً | [github.com/features/copilot](https://github.com/features/copilot) |
-| Cursor | محرر أكواد بالذكاء الاصطناعي | مجاني جزئياً | [cursor.com](https://cursor.com) |
-| Continue | إضافة مفتوحة المصدر لمساعد البرمجة | مجاني | [www.continue.dev](https://www.continue.dev) |
-| Claude Code | مساعد برمجة من سطر الأوامر | مدفوع | [www.anthropic.com/claude-code](https://www.anthropic.com/claude-code) |
+| [Google Colab](https://colab.research.google.com) | شغّل كود بايثون ونماذج على سيرفرات قوقل. | مجاني جزئياً | ادخل بحساب قوقل وافتح دفتراً جديداً. |
+| [GitHub Copilot](https://github.com/features/copilot) | مساعد برمجة داخل المحرر. | مجاني جزئياً | ثبّت الإضافة في VS Code وسجّل بحساب GitHub. |
+| [Cursor](https://cursor.com) | محرر أكواد بالذكاء الاصطناعي. | مجاني جزئياً | نزّله وافتح مشروعك. |
+| [Continue](https://www.continue.dev) | إضافة مفتوحة المصدر لمساعد البرمجة. | مجاني | ثبّت الإضافة واربطها بنموذج محلي. |
+| [Claude Code](https://www.anthropic.com/claude-code) | مساعد برمجة من سطر الأوامر. | مدفوع | يحتاج حساباً مدفوعاً. |
+
+### صور
+
+| الأداة | الوصف | السعر | كيف تبدأ |
+|---|---|---|---|
+| [Stable Diffusion](https://stability.ai) | توليد صور بنماذج مفتوحة. | مجاني | شغّله محلياً بواجهة مثل ComfyUI. |
+| [ComfyUI](https://www.comfy.org) | واجهة بصرية لتوليد الصور محلياً. | مجاني | نزّله واربطه بنموذج صور مفتوح. |
+| [FLUX](https://blackforestlabs.ai) | نماذج توليد صور عالية الجودة. | مجاني جزئياً | جرّبه عبر مواقع تستضيفه مثل Hugging Face. |
+| [Midjourney](https://www.midjourney.com) | من أفضل أدوات توليد الصور. | مدفوع | يحتاج اشتراكاً مدفوعاً. |
+| [Leonardo AI](https://leonardo.ai) | توليد وتحرير صور. | مجاني جزئياً | سجّل واستخدم الرصيد المجاني اليومي. |
+| [Ideogram](https://ideogram.ai) | توليد صور مع نصوص داخلها. | مجاني جزئياً | سجّل واكتب وصف الصورة. |
+| [Canva](https://www.canva.com) | تصميم مع أدوات ذكاء اصطناعي. | مجاني جزئياً | ابدأ بقالب جاهز وجرّب أدوات الذكاء. |
 
 ### صوت وفيديو
 
-| الأداة | الوصف | السعر | الرابط |
+| الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| Whisper | تحويل الكلام لنص، مفتوح المصدر | مجاني | [github.com/openai/whisper](https://github.com/openai/whisper) |
-| ElevenLabs | تحويل نص لصوت واقعي | مجاني جزئياً | [elevenlabs.io](https://elevenlabs.io) |
-| Runway | توليد وتحرير فيديو | مجاني جزئياً | [runwayml.com](https://runwayml.com) |
-| CapCut | مونتاج فيديو بأدوات ذكية | مجاني جزئياً | [www.capcut.com](https://www.capcut.com) |
+| [Whisper](https://github.com/openai/whisper) (عربي) | تحويل الكلام لنص ويدعم العربي. | مجاني | شغّله محلياً لتفريغ ملفات الصوت. |
+| [Piper](https://github.com/rhasspy/piper) | تحويل نص لصوت محلياً. | مجاني | نزّل صوتاً وشغّله من سطر الأوامر. |
+| [ElevenLabs](https://elevenlabs.io) | تحويل نص لصوت واقعي. | مجاني جزئياً | سجّل واستخدم الرصيد المجاني الشهري. |
+| [Runway](https://runwayml.com) | توليد وتحرير فيديو. | مجاني جزئياً | سجّل وجرّب الرصيد المجاني. |
+| [CapCut](https://www.capcut.com) | مونتاج فيديو بأدوات ذكية. | مجاني جزئياً | نزّل التطبيق وابدأ مشروعاً جديداً. |
 
 ### إنتاجية
 
-| الأداة | الوصف | السعر | الرابط |
+| الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| DeepL | ترجمة دقيقة | مجاني جزئياً | [www.deepl.com](https://www.deepl.com) |
-| Gamma | عروض ومستندات بالذكاء الاصطناعي | مجاني جزئياً | [gamma.app](https://gamma.app) |
-| Notion AI | ملاحظات ومهام مع مساعد ذكي | مدفوع | [www.notion.com/product/ai](https://www.notion.com/product/ai) |
+| [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) (عربي) | استخراج النص من الصور ويدعم العربي. | مجاني | ثبّته واختر لغة العربية عند التشغيل. |
+| [DeepL](https://www.deepl.com) | ترجمة دقيقة. | مجاني جزئياً | الصق النص واختر اللغة. |
+| [Gamma](https://gamma.app) | عروض ومستندات بالذكاء الاصطناعي. | مجاني جزئياً | اكتب فكرة العرض ويطلع لك جاهز. |
+| [Notion AI](https://www.notion.com/product/ai) | ملاحظات ومهام مع مساعد ذكي. | مدفوع | يحتاج خطة مدفوعة. |
 
-> **مجاني** يعني بدون دفع، **مجاني جزئياً** يعني فيه خطة مجانية بحدود، **مدفوع** يعني لازم اشتراك. الأسعار والخطط تتغير، تأكد من الموقع الرسمي.
+> (عربي) يعني أداة عربية أو تدعم العربي بشكل واضح. **مجاني** بدون دفع، **مجاني جزئياً** فيه خطة مجانية بحدود، **مدفوع** يحتاج اشتراك. الأسعار تتغير، تأكد من الموقع الرسمي.
 
 ## نضيف أدوات
 
