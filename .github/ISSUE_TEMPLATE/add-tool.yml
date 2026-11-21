@@ -1,0 +1,49 @@
+name: اقتراح أداة | Suggest a tool
+description: اقترح أداة ذكاء اصطناعي تنضاف للدليل | Suggest an AI tool for the directory
+title: "[أداة] "
+labels: ["tool"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: اسم الأداة | Tool name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: الرابط الرسمي | Official link
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: price
+    attributes:
+      label: السعر | Price
+      options:
+        - مجاني | Free
+        - مجاني جزئياً | Freemium
+        - مدفوع | Paid
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: الفئة | Category
+      options:
+        - نماذج مفتوحة | Open models
+        - تشغيل محلي | Run locally
+        - محادثة وبحث | Chat and search
+        - برمجة | Coding
+        - صور | Images
+        - صوت وفيديو | Audio and video
+        - إنتاجية | Productivity
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: ليش تستحق تنضاف؟ | Why should it be added?
+      description: وصف قصير وكيف يبدأ فيها المستخدم | A short description and how a user can start
+    validations:
+      required: true
