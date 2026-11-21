@@ -18,7 +18,19 @@ header{text-align:center;padding:64px 0 28px}
 .badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);padding:4px 16px;border-radius:999px;font-size:13px;letter-spacing:.5px;margin-bottom:18px}
 h1{font-size:clamp(30px,6vw,52px);font-weight:800;margin:0 0 12px;background:linear-gradient(90deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
 header p{color:var(--muted);font-size:clamp(16px,2.4vw,19px);margin:0 auto;max-width:620px}
-.goals{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:34px 0 10px}
+.flag{width:46px;height:31px;vertical-align:middle;border-radius:5px;margin-inline-start:12px;box-shadow:0 2px 10px rgba(0,0,0,.5)}
+.goals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px 0 10px}
+@media(max-width:760px){.goals{grid-template-columns:1fr}header{padding-top:44px}}
+.sec{margin:44px 0 6px}
+.sec h2{font-size:26px;margin:0 0 4px;color:var(--gold2)}
+.sec p{margin:0 0 16px;color:var(--muted)}
+.picks{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.pick{padding:10px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer;font:inherit;font-size:15px;transition:.15s}
+.pick:hover,.pick.on{border-color:var(--gold);color:var(--gold2)}
+.share{color:var(--muted);font-size:13px;text-decoration:none;border:1px solid var(--line);padding:4px 12px;border-radius:10px}
+.share:hover{color:var(--gold2);border-color:var(--gold)}
+.acts{display:flex;gap:8px;align-items:center}
+.kw{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
 .goal{background:linear-gradient(180deg,var(--bg2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px 20px}
 .goal b{display:block;color:var(--gold2);font-size:17px;margin-bottom:4px}
 .goal span{color:var(--muted);font-size:14.5px}
@@ -53,7 +65,7 @@ footer a{color:var(--gold2)}
 <div class="wrap">
 <header>
   <span class="badge">مجاني · مفتوح المصدر · بدون إعلانات</span>
-  <h1>دليل الكويت للذكاء الاصطناعي</h1>
+  <h1>دليل الكويت للذكاء الاصطناعي<svg class="flag" viewBox="0 0 30 20" role="img" aria-label="علم الكويت"><rect width="30" height="6.67" fill="#007a3d"/><rect y="6.67" width="30" height="6.66" fill="#fff"/><rect y="13.33" width="30" height="6.67" fill="#ce1126"/><path d="M0 0L7.5 6.67V13.33L0 20Z" fill="#000"/></svg></h1>
   <p>موسوعة مجانية لأدوات الذكاء الاصطناعي بالعربي، مصنفة وبسيطة، لأهل الكويت والوطن العربي.</p>
   <div class="goals">
     <div class="goal"><b>مجاني 100%</b><span>الموقع مفتوح المصدر بدون اشتراك ولا دفع ولا إعلانات.</span></div>
@@ -62,7 +74,13 @@ footer a{color:var(--gold2)}
   </div>
 </header>
 </div>
-<div class="bar"><div class="wrap">
+<div class="wrap sec">
+  <h2>الأفضل لك</h2>
+  <p>وش تبي تسوي؟ اختر ونرشح لك 3 أدوات مجانية.</p>
+  <div class="picks" id="picks"></div>
+  <div class="kw" id="recs"></div>
+</div>
+<div class="bar" id="tools"><div class="wrap">
   <input type="search" id="q" placeholder="ابحث عن أداة..." aria-label="بحث">
   <div class="chips" id="cats"></div>
   <div class="chips" id="prices"></div>
@@ -70,6 +88,11 @@ footer a{color:var(--gold2)}
 <div class="wrap">
   <div class="count" id="count"></div>
   <div class="grid" id="grid"></div>
+</div>
+<div class="wrap sec" id="kuwait">
+  <h2>في الكويت</h2>
+  <p>جهات ومؤسسات كويتية لها علاقة بالذكاء الاصطناعي والتحول الرقمي. (المعلومات من مصادر عامة، وتأكد من المواقع الرسمية.)</p>
+  <div class="kw" id="kwlist" style="padding-bottom:50px"></div>
 </div>
 <footer>
   الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الشروط والأسعار تتغير، تأكد من الموقع الرسمي.<br>
@@ -135,15 +158,36 @@ function chips(el,list,get,set){
   list.forEach(n=>{const b=document.createElement("button");b.className="chip"+(get()===n?" on":"");b.textContent=n;
     b.onclick=()=>{set(n);render()};el.appendChild(b)});
 }
+function cardHTML(t){
+  const wa="https://wa.me/?text="+encodeURIComponent(t[0]+" - "+t[2]+"\nمن دليل الكويت للذكاء الاصطناعي: https://29kuwait.github.io/kuwait-ai-directory/");
+  return `<div class="card"><div class="row"><h3>${esc(t[0])}</h3><div class="tags">${t[6]?'<span class="tag ar">عربي</span>':''}<span class="tag ${P[t[4]][1]}">${P[t[4]][0]}</span></div></div><p>${esc(t[1])}</p><div class="tip"><b>كيف تبدأ:</b> ${esc(t[5])}</div><div class="row"><span class="cat">${esc(t[3])}</span><div class="acts"><a class="share" href="${wa}" target="_blank" rel="noopener">واتساب</a><a class="btn" href="${t[2]}" target="_blank" rel="noopener">افتح</a></div></div></div>`;
+}
+const PICKS={"أكتب وأسأل":["Google AI Studio","Duck.ai","Microsoft Copilot"],"أصمم صور":["ComfyUI","Stable Diffusion","Leonardo AI"],"أبرمج":["DeepSeek","Continue","Google Colab"],"صوت وفيديو":["Whisper","Piper","CapCut"],"بدون إنترنت":["Ollama","LM Studio","Jan"],"أبي بالعربي":["Fanar","Jais","Qwen"]};
+let pick="أكتب وأسأل";
+function renderPicks(){
+  const el=$("picks"); el.innerHTML="";
+  Object.keys(PICKS).forEach(k=>{const b=document.createElement("button");b.className="pick"+(pick===k?" on":"");b.textContent=k;b.onclick=()=>{pick=k;renderPicks()};el.appendChild(b)});
+  $("recs").innerHTML=PICKS[pick].map(n=>T.find(t=>t[0]===n)).filter(Boolean).map(cardHTML).join("");
+}
+const KW=[
+["الجهاز المركزي لتكنولوجيا المعلومات (CAIT)","يقود التحول الرقمي الحكومي في الكويت ويدعم تبني الذكاء الاصطناعي في الجهات العامة.","https://www.cait.gov.kw"],
+["هيئة الاتصالات وتقنية المعلومات (CITRA)","الجهة المنظمة لقطاع الاتصالات وتقنية المعلومات، وأعلنت عن تحديث أنظمة استخدام الذكاء الاصطناعي.","https://www.citra.gov.kw"],
+["جامعة الكويت","أعلنت برنامج علم البيانات والذكاء الاصطناعي لعام 2025-2026.","https://www.ku.edu.kw"],
+["الجامعة الأمريكية في الكويت (AUK)","استضافت منتدى عن تبني الذكاء الاصطناعي في التعليم العالي.","https://www.auk.edu.kw"],
+["معهد الكويت للأبحاث العلمية (KISR)","مؤسسة بحثية وطنية في الكويت.","https://www.kisr.edu.kw"]
+];
+function renderKW(){
+  $("kwlist").innerHTML=KW.map(k=>`<div class="card"><h3>${esc(k[0])}</h3><p style="flex:1">${esc(k[1])}</p><div class="row"><span class="cat">الكويت</span><a class="btn" href="${k[2]}" target="_blank" rel="noopener">الموقع</a></div></div>`).join("");
+}
 function render(){
   chips($("cats"),cats,()=>cat,v=>cat=v);
   chips($("prices"),["الكل","مجاني","مجاني جزئياً","مدفوع"],()=>price,v=>price=v);
   const list=T.filter(t=>(cat==="الكل"||t[3]===cat)&&(price==="الكل"||P[t[4]][0]===price)&&(t[0]+t[1]).toLowerCase().includes(q));
   $("count").textContent=list.length+" أداة من "+T.length;
-  $("grid").innerHTML=list.length?list.map(t=>`<div class="card"><div class="row"><h3>${esc(t[0])}</h3><div class="tags">${t[6]?'<span class="tag ar">عربي</span>':''}<span class="tag ${P[t[4]][1]}">${P[t[4]][0]}</span></div></div><p>${esc(t[1])}</p><div class="tip"><b>كيف تبدأ:</b> ${esc(t[5])}</div><div class="row"><span class="cat">${esc(t[3])}</span><a class="btn" href="${t[2]}" target="_blank" rel="noopener">افتح</a></div></div>`).join(""):'<div class="empty">ما لقينا أداة بهالاسم. افتح Issue ونضيفها.</div>';
+  $("grid").innerHTML=list.length?list.map(cardHTML).join(""):'<div class="empty">ما لقينا أداة بهالاسم. افتح Issue ونضيفها.</div>';
 }
 $("q").oninput=e=>{q=e.target.value.trim().toLowerCase();render()};
-render();
+render();renderPicks();renderKW();
 </script>
 </body>
 </html>
