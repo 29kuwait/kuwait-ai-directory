@@ -1,0 +1,18 @@
+name: بلاغ عن رابط أو معلومة غلط | Report a broken link or wrong info
+description: رابط ما يشتغل أو سعر تغيّر | A broken link or a changed price
+title: "[بلاغ] "
+labels: ["fix"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: اسم الأداة | Tool name
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: وش المشكلة؟ | What is wrong?
+      description: رابط خربان، سعر تغيّر، أو معلومة غلط | Broken link, changed price, or wrong information
+    validations:
+      required: true
