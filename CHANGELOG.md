@@ -2,6 +2,11 @@
 
 كل تغيير في الأدوات أو الأسعار يتسجل هنا. | Every change to tools or prices is logged here.
 
+## 2026-11-22 (تصحيحات بعد المراجعة | Corrections after the review)
+- Ollama: رجع «مجاني». البرنامج المحلي مجاني بدون حدود، والاشتراك (Pro) اختياري لخدمة سحابية. | Ollama is back to free: the local app is free with no limits; Pro is an optional cloud plan.
+- LMArena: الرابط صار https://arena.ai (الموقع القديم يحوّل له). | LMArena link is now https://arena.ai (the old site redirects).
+- Piper: مستودع rhasspy/piper مؤرشف، والرابط صار للمستودع المكمل OHF-Voice/piper1-gpl. | The rhasspy/piper repo is archived; the link now points to its successor OHF-Voice/piper1-gpl.
+
 ## 2026-11-22 (مراجعة الأسعار | Price review)
 - الروابط: 51 رابط انفحص (46 أداة + 5 جهات كويتية)، كلها شغالة (403 من مواقع معروفة ما يعتبر عطل). | Links: 51 checked, all working (403s from known sites are not failures).
 - أسعار تغيرت | Price changes:

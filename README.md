@@ -43,7 +43,7 @@
 
 | الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| [Ollama](https://ollama.com) | شغّل النماذج على جهازك بأمر واحد. | مجاني جزئياً | ثبّته، ثم اكتب ollama run مع اسم النموذج. |
+| [Ollama](https://ollama.com) | شغّل النماذج على جهازك بأمر واحد. | مجاني | ثبّته، ثم اكتب ollama run مع اسم النموذج. |
 | [LM Studio](https://lmstudio.ai) | واجهة سهلة لتشغيل النماذج محلياً. | مجاني | نزّل البرنامج واختر نموذجاً من القائمة. |
 | [Jan](https://jan.ai) | تطبيق يشغّل النماذج على جهازك بدون إنترنت. | مجاني | نزّله وحمّل نموذجاً وابدأ المحادثة. |
 | [GPT4All](https://gpt4all.io) | شغّل نماذج على جهازك بدون كرت شاشة قوي. | مجاني | نزّل التطبيق واختر نموذجاً صغيراً. |
@@ -58,7 +58,7 @@
 | [Google AI Studio](https://aistudio.google.com) | جرّب نماذج Gemini مجاناً. | مجاني جزئياً | ادخل بحساب قوقل وجرّب النماذج في المتصفح. |
 | [Meta AI](https://www.meta.ai) | مساعد Meta. | مجاني | ادخله من الموقع أو من تطبيقات Meta. |
 | [Duck.ai](https://duck.ai) | محادثة مع عدة نماذج بخصوصية أعلى. | مجاني جزئياً | افتح الرابط وابدأ بدون تسجيل. |
-| [LMArena](https://lmarena.ai) | قارن بين نماذج الذكاء الاصطناعي وشوف أيها أفضل. | مجاني | اكتب سؤالك وقارن بين جوابين من نموذجين. |
+| [LMArena](https://arena.ai) | قارن بين نماذج الذكاء الاصطناعي وشوف أيها أفضل. | مجاني | اكتب سؤالك وقارن بين جوابين من نموذجين. |
 | [Claude](https://claude.ai) | مساعد Anthropic، قوي بالكتابة والبرمجة. | مجاني جزئياً | سجّل بإيميلك وجرّب الخطة المجانية. |
 | [Perplexity](https://www.perplexity.ai) | بحث ذكي مع مصادر. | مجاني جزئياً | اكتب سؤالك وشوف المصادر تحت الجواب. |
 | [Microsoft Copilot](https://copilot.microsoft.com) | مساعد Microsoft المجاني. | مجاني | افتحه من الموقع أو من متصفح Edge. |
@@ -92,7 +92,7 @@
 | الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
 | [Whisper](https://github.com/openai/whisper) (عربي) | تحويل الكلام لنص ويدعم العربي. | مجاني | شغّله محلياً لتفريغ ملفات الصوت. |
-| [Piper](https://github.com/rhasspy/piper) | تحويل نص لصوت محلياً. | مجاني | نزّل صوتاً وشغّله من سطر الأوامر. |
+| [Piper](https://github.com/OHF-Voice/piper1-gpl) | تحويل نص لصوت محلياً. | مجاني | نزّل صوتاً وشغّله من سطر الأوامر. |
 | [ElevenLabs](https://elevenlabs.io) | تحويل نص لصوت واقعي. | مجاني جزئياً | سجّل واستخدم الرصيد المجاني الشهري. |
 | [Runway](https://runwayml.com) | توليد وتحرير فيديو. | مجاني جزئياً | سجّل وجرّب الرصيد المجاني. |
 | [CapCut](https://www.capcut.com) | مونتاج فيديو بأدوات ذكية. | مجاني جزئياً | نزّل التطبيق وابدأ مشروعاً جديداً. |
@@ -154,7 +154,7 @@ The website supports Arabic and English, light and dark themes, and a "Best for 
 
 | Tool | Description | Price | How to start |
 |---|---|---|---|
-| [Ollama](https://ollama.com) | Run models on your computer with one command. | Freemium | Install it, then type ollama run with a model name. |
+| [Ollama](https://ollama.com) | Run models on your computer with one command. | Free | Install it, then type ollama run with a model name. |
 | [LM Studio](https://lmstudio.ai) | An easy app to run models locally. | Free | Download the app and pick a model from the list. |
 | [Jan](https://jan.ai) | An app that runs models offline on your computer. | Free | Install it, download a model and start chatting. |
 | [GPT4All](https://gpt4all.io) | Run models without a powerful graphics card. | Free | Install the app and choose a small model. |
@@ -169,7 +169,7 @@ The website supports Arabic and English, light and dark themes, and a "Best for 
 | [Google AI Studio](https://aistudio.google.com) | Try Gemini models for free. | Freemium | Sign in with Google and try models in the browser. |
 | [Meta AI](https://www.meta.ai) | Meta's assistant. | Free | Use it on the site or inside Meta apps. |
 | [Duck.ai](https://duck.ai) | Chat with several models with more privacy. | Freemium | Open the link and start without signing up. |
-| [LMArena](https://lmarena.ai) | Compare AI models side by side and see which is better. | Free | Ask a question and compare answers from two models. |
+| [LMArena](https://arena.ai) | Compare AI models side by side and see which is better. | Free | Ask a question and compare answers from two models. |
 | [Claude](https://claude.ai) | Anthropic's assistant, strong at writing and coding. | Freemium | Sign up with email and try the free plan. |
 | [Perplexity](https://www.perplexity.ai) | AI search with sources. | Freemium | Ask a question and check the sources under the answer. |
 | [Microsoft Copilot](https://copilot.microsoft.com) | Microsoft's free assistant. | Free | Open it on the site or in the Edge browser. |
@@ -203,7 +203,7 @@ The website supports Arabic and English, light and dark themes, and a "Best for 
 | Tool | Description | Price | How to start |
 |---|---|---|---|
 | [Whisper](https://github.com/openai/whisper) (Arabic) | Speech to text, with Arabic support. | Free | Run it locally to transcribe audio files. |
-| [Piper](https://github.com/rhasspy/piper) | Local text to speech. | Free | Download a voice and run it from the command line. |
+| [Piper](https://github.com/OHF-Voice/piper1-gpl) | Local text to speech. | Free | Download a voice and run it from the command line. |
 | [ElevenLabs](https://elevenlabs.io) | Realistic text to speech. | Freemium | Sign up and use the monthly free credits. |
 | [Runway](https://runwayml.com) | Generate and edit video. | Freemium | Sign up and try the free credits. |
 | [CapCut](https://www.capcut.com) | Video editing with smart tools. | Freemium | Install the app and start a new project. |
