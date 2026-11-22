@@ -5,6 +5,8 @@
 
 🌐 **الموقع | Website:** https://29kuwait.github.io/kuwait-ai-directory/
 
+🔄 **آخر مراجعة | Last review:** 2026-11-22
+
 [العربية](#العربية) · [English](#english)
 
 ---
@@ -18,6 +20,8 @@
 3. **لأهل الكويت والوطن العربي:** نوضح أفضل الأدوات المجانية وكيف تبدأ فيها.
 
 الموقع يدعم العربية والإنجليزية، ووضع فاتح وداكن، وفيه قسم "الأفضل لك" يرشح لك أدوات حسب اللي تبي تسويه.
+
+> 🔄 **المراجعة الأسبوعية:** الأسعار والروابط تنراجع كل أسبوع. الأدوات اللي تتغير أو تتوقف تنشال، والأدوات الرائجة تنضاف. القواعد في [REVIEW.md](REVIEW.md) والسجل في [CHANGELOG.md](CHANGELOG.md).
 
 ### الأدوات (46 أداة)
 
@@ -127,6 +131,8 @@
 3. **For Kuwait and the Arab world:** we show the best free tools and how to get started.
 
 The website supports Arabic and English, light and dark themes, and a "Best for you" picker that recommends tools based on what you want to do.
+
+> 🔄 **Weekly review:** prices and links are reviewed every week. Tools that change or shut down are removed, and tools that become popular are added. The rules are in [REVIEW.md](REVIEW.md) and the log is in [CHANGELOG.md](CHANGELOG.md).
 
 ### Tools (46)
 

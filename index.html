@@ -123,6 +123,7 @@ footer a{color:var(--gold2)}
   <div class="kw" id="kwlist" style="padding-bottom:50px"></div>
 </div>
 <footer>
+  <span id="rev"></span><br>
   <span data-i="tip"></span><br>
   <span data-i="foot1">الأدوات ملك لشركاتها، والدليل للإرشاد فقط. الشروط والأسعار تتغير، تأكد من الموقع الرسمي.</span><br>
   <span data-i="foot2a">عندك أداة؟</span> <a href="https://github.com/29kuwait/kuwait-ai-directory/issues" data-i="foot2b">افتح Issue</a> · MIT · <span data-i="foot3">صنع في الكويت</span> ❤️
@@ -150,6 +151,7 @@ foot3:["صنع في الكويت","Made in Kuwait"]
 };
 const U={search:["ابحث عن أداة...","Search for a tool..."],all:["الكل","All"],free:["مجاني","Free"],part:["مجاني جزئياً","Freemium"],paid:["مدفوع","Paid"],start:["كيف تبدأ:","How to start:"],open:["افتح","Open"],site:["الموقع","Website"],wa:["واتساب","WhatsApp"],arab:["عربي","Arabic"],of:["أداة من","tools of"],empty:["ما لقينا أداة بهالاسم. افتح Issue ونضيفها.","No tool found. Open an Issue and we will add it."],kw:["الكويت","Kuwait"],shareTxt:["من دليل الكويت للذكاء الاصطناعي","From Kuwait AI Directory"]};
 const CATS={open:["نماذج مفتوحة","Open models"],local:["تشغيل محلي","Run locally"],chat:["محادثة وبحث","Chat & search"],code:["برمجة","Coding"],image:["صور","Images"],av:["صوت وفيديو","Audio & video"],prod:["إنتاجية","Productivity"]};
+const REVIEWED="2026-11-22"; // تاريخ آخر مراجعة (تتحدث تلقائياً من المراجعة الأسبوعية)
 // [name, descAr, descEn, url, cat, price, tipAr, tipEn, arabic]
 const T=[
 ["Llama","نماذج Meta المفتوحة.","Meta's open models.","https://www.llama.com","open","free","حمّله وشغّله على جهازك عبر Ollama.","Download it and run it on your computer with Ollama."],
@@ -255,6 +257,7 @@ function applyStatic(){
   document.documentElement.dataset.theme=TH;
   document.querySelectorAll("[data-i]").forEach(el=>{el.textContent=S[el.dataset.i][i]});
   $("q").placeholder=U.search[i];
+  $("rev").textContent=(i?"Last review: ":"آخر مراجعة: ")+REVIEWED;
   $("lang").textContent=L==="en"?"العربية":"English";
   $("theme").textContent=TH==="dark"?"☀":"☾";
   document.title=S.title[i]+(L==="en"?"":" | Kuwait AI Directory");
