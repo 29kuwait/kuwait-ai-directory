@@ -36,14 +36,14 @@
 | [Fanar](https://fanar.qa) (عربي) | نموذج عربي من قطر. | مجاني | افتح الموقع واسأله بالعربي مباشرة. |
 | [Jais](https://inceptionai.ai/jais) (عربي) | نموذج عربي إنجليزي من الإمارات. | مجاني | ادخل موقعه وجرّب المحادثة بالعربي. |
 | [AceGPT](https://github.com/FreedomIntelligence/AceGPT) (عربي) | نموذج لغوي عربي مفتوح المصدر. | مجاني | حمّله من GitHub، يناسب المطورين. |
-| [Hugging Face](https://huggingface.co) | أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي. | مجاني | ابحث عن نموذج وجرّبه من Spaces بدون تثبيت. |
+| [Hugging Face](https://huggingface.co) | أكبر مكتبة نماذج ومشاريع ذكاء اصطناعي. | مجاني جزئياً | ابحث عن نموذج وجرّبه من Spaces بدون تثبيت. |
 | [Hugging Face Chat](https://huggingface.co/chat) | محادثة مع نماذج مفتوحة بدون تثبيت. | مجاني | افتح الرابط واختر النموذج اللي تبيه. |
 
 ### تشغيل محلي
 
 | الأداة | الوصف | السعر | كيف تبدأ |
 |---|---|---|---|
-| [Ollama](https://ollama.com) | شغّل النماذج على جهازك بأمر واحد. | مجاني | ثبّته، ثم اكتب ollama run مع اسم النموذج. |
+| [Ollama](https://ollama.com) | شغّل النماذج على جهازك بأمر واحد. | مجاني جزئياً | ثبّته، ثم اكتب ollama run مع اسم النموذج. |
 | [LM Studio](https://lmstudio.ai) | واجهة سهلة لتشغيل النماذج محلياً. | مجاني | نزّل البرنامج واختر نموذجاً من القائمة. |
 | [Jan](https://jan.ai) | تطبيق يشغّل النماذج على جهازك بدون إنترنت. | مجاني | نزّله وحمّل نموذجاً وابدأ المحادثة. |
 | [GPT4All](https://gpt4all.io) | شغّل نماذج على جهازك بدون كرت شاشة قوي. | مجاني | نزّل التطبيق واختر نموذجاً صغيراً. |
@@ -55,9 +55,9 @@
 |---|---|---|---|
 | [ChatGPT](https://chatgpt.com) | مساعد OpenAI الأشهر. | مجاني جزئياً | سجّل بإيميلك، الخطة المجانية لها حد يومي. |
 | [Gemini](https://gemini.google.com) | مساعد Google ويدعم العربي. | مجاني جزئياً | ادخل بحساب قوقل وابدأ. |
-| [Google AI Studio](https://aistudio.google.com) | جرّب نماذج Gemini مجاناً. | مجاني | ادخل بحساب قوقل وجرّب النماذج في المتصفح. |
+| [Google AI Studio](https://aistudio.google.com) | جرّب نماذج Gemini مجاناً. | مجاني جزئياً | ادخل بحساب قوقل وجرّب النماذج في المتصفح. |
 | [Meta AI](https://www.meta.ai) | مساعد Meta. | مجاني | ادخله من الموقع أو من تطبيقات Meta. |
-| [Duck.ai](https://duck.ai) | محادثة مع عدة نماذج بخصوصية أعلى. | مجاني | افتح الرابط وابدأ بدون تسجيل. |
+| [Duck.ai](https://duck.ai) | محادثة مع عدة نماذج بخصوصية أعلى. | مجاني جزئياً | افتح الرابط وابدأ بدون تسجيل. |
 | [LMArena](https://lmarena.ai) | قارن بين نماذج الذكاء الاصطناعي وشوف أيها أفضل. | مجاني | اكتب سؤالك وقارن بين جوابين من نموذجين. |
 | [Claude](https://claude.ai) | مساعد Anthropic، قوي بالكتابة والبرمجة. | مجاني جزئياً | سجّل بإيميلك وجرّب الخطة المجانية. |
 | [Perplexity](https://www.perplexity.ai) | بحث ذكي مع مصادر. | مجاني جزئياً | اكتب سؤالك وشوف المصادر تحت الجواب. |
@@ -147,14 +147,14 @@ The website supports Arabic and English, light and dark themes, and a "Best for 
 | [Fanar](https://fanar.qa) (Arabic) | An Arabic model from Qatar. | Free | Open the site and ask in Arabic directly. |
 | [Jais](https://inceptionai.ai/jais) (Arabic) | An Arabic-English model from the UAE. | Free | Visit the site and chat in Arabic. |
 | [AceGPT](https://github.com/FreedomIntelligence/AceGPT) (Arabic) | An open-source Arabic language model. | Free | Download it from GitHub; suited to developers. |
-| [Hugging Face](https://huggingface.co) | The largest hub of AI models and projects. | Free | Find a model and try it in Spaces, no install. |
+| [Hugging Face](https://huggingface.co) | The largest hub of AI models and projects. | Freemium | Find a model and try it in Spaces, no install. |
 | [Hugging Face Chat](https://huggingface.co/chat) | Chat with open models, no install. | Free | Open the link and pick the model you want. |
 
 ### Run locally
 
 | Tool | Description | Price | How to start |
 |---|---|---|---|
-| [Ollama](https://ollama.com) | Run models on your computer with one command. | Free | Install it, then type ollama run with a model name. |
+| [Ollama](https://ollama.com) | Run models on your computer with one command. | Freemium | Install it, then type ollama run with a model name. |
 | [LM Studio](https://lmstudio.ai) | An easy app to run models locally. | Free | Download the app and pick a model from the list. |
 | [Jan](https://jan.ai) | An app that runs models offline on your computer. | Free | Install it, download a model and start chatting. |
 | [GPT4All](https://gpt4all.io) | Run models without a powerful graphics card. | Free | Install the app and choose a small model. |
@@ -166,9 +166,9 @@ The website supports Arabic and English, light and dark themes, and a "Best for 
 |---|---|---|---|
 | [ChatGPT](https://chatgpt.com) | OpenAI's popular assistant. | Freemium | Sign up with email; the free plan has a daily limit. |
 | [Gemini](https://gemini.google.com) | Google's assistant, with Arabic support. | Freemium | Sign in with a Google account and start. |
-| [Google AI Studio](https://aistudio.google.com) | Try Gemini models for free. | Free | Sign in with Google and try models in the browser. |
+| [Google AI Studio](https://aistudio.google.com) | Try Gemini models for free. | Freemium | Sign in with Google and try models in the browser. |
 | [Meta AI](https://www.meta.ai) | Meta's assistant. | Free | Use it on the site or inside Meta apps. |
-| [Duck.ai](https://duck.ai) | Chat with several models with more privacy. | Free | Open the link and start without signing up. |
+| [Duck.ai](https://duck.ai) | Chat with several models with more privacy. | Freemium | Open the link and start without signing up. |
 | [LMArena](https://lmarena.ai) | Compare AI models side by side and see which is better. | Free | Ask a question and compare answers from two models. |
 | [Claude](https://claude.ai) | Anthropic's assistant, strong at writing and coding. | Freemium | Sign up with email and try the free plan. |
 | [Perplexity](https://www.perplexity.ai) | AI search with sources. | Freemium | Ask a question and check the sources under the answer. |
