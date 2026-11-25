@@ -23,7 +23,7 @@
 
 > 🔄 **المراجعة الأسبوعية:** الأسعار والروابط تنراجع كل أسبوع. الأدوات اللي تتغير أو تتوقف تنشال، والأدوات الرائجة تنضاف. القواعد في [REVIEW.md](REVIEW.md) والسجل في [CHANGELOG.md](CHANGELOG.md).
 
-### الأدوات (46 أداة)
+### الأدوات (47 أداة)
 
 ### نماذج مفتوحة
 
@@ -86,6 +86,7 @@
 | [Leonardo AI](https://leonardo.ai) | توليد وتحرير صور. | مجاني جزئياً | سجّل واستخدم الرصيد المجاني اليومي. |
 | [Ideogram](https://ideogram.ai) | توليد صور مع نصوص داخلها. | مجاني جزئياً | سجّل واكتب وصف الصورة. |
 | [Canva](https://www.canva.com) | تصميم مع أدوات ذكاء اصطناعي. | مجاني جزئياً | ابدأ بقالب جاهز وجرّب أدوات الذكاء. |
+| [Kite](https://kite.new) | صمّم الواجهات مع فريقك بينما يرسم وكلاء الذكاء الاصطناعي طبقات قابلة للتعديل في نفس الملف. | مجاني جزئياً | سجّل مجاناً وافتح ملفاً جديداً، أو اربط Claude أو Cursor عبر MCP. |
 
 ### صوت وفيديو
 
@@ -134,7 +135,7 @@ The website supports Arabic and English, light and dark themes, and a "Best for 
 
 > 🔄 **Weekly review:** prices and links are reviewed every week. Tools that change or shut down are removed, and tools that become popular are added. The rules are in [REVIEW.md](REVIEW.md) and the log is in [CHANGELOG.md](CHANGELOG.md).
 
-### Tools (46)
+### Tools (47)
 
 ### Open models
 
@@ -197,6 +198,7 @@ The website supports Arabic and English, light and dark themes, and a "Best for 
 | [Leonardo AI](https://leonardo.ai) | Generate and edit images. | Freemium | Sign up and use the daily free credits. |
 | [Ideogram](https://ideogram.ai) | Generate images with readable text in them. | Freemium | Sign up and describe your image. |
 | [Canva](https://www.canva.com) | Design with built-in AI tools. | Freemium | Start from a template and try the AI tools. |
+| [Kite](https://kite.new) | Design UI with your team while AI agents draw editable layers in the same file. | Freemium | Sign up free and open a file, or connect Claude or Cursor over MCP. |
 
 ### Audio & video
 
